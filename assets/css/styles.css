@@ -123,7 +123,65 @@ h5 {
   color: #e0e4e8;
 }
 
-/*Scrollbar*/
+/* Codes*/
+.code{
+  color: #000000;
+  background-color: #c2c2c3;
+  font-family: 'Courier New', Courier, monospace;
+}
+.codeout{
+  color:#a70118;
+  background-color: #dadada;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/*Subtitle*/
+.subtitle {
+  color: #000000;
+  text-decoration: underline;
+  font-size: 20px;
+}
+/*Next and previous*/
+.previous {
+  text-align: center;
+  background-color: #d0cdcd;
+  color: black;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.next {
+  text-align: center;
+  background-color:#ec3750;
+  color: white;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+/* Images*/
+.img{
+  text-align: center;
+  text-decoration: underline;
+}
+.img img{
+  height: auto;
+  max-width: 100%;
+}
+
+/*Tables*/
+table{
+  border-collapse: collapse;
+}
+th, td{
+  border: 1px solid black;
+  text-align: center;
+}
+
+/*Terminal*/
+iframe{
+  height: 300px;
+  width: 100%;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
