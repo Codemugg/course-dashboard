@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:src" content="assets/images/index-meta.png" />
+    <meta property="og:image" content="assets/images/index-meta.png" />
+    <meta
+      name="twitter:title"
+      content="Codemugg - Learning Without A Price Tag"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/codemugg-logo-white-1.png"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Codemugg is a non-profit organization that aims to provide free courses on programming being said that learning should never come with a price."
+    />
+    <title>Codemugg Course Template</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h2>Codemugg Inc</h2>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-address-book"></i>Contact</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-pencil-alt"></i>Courses</a>
+          </li>
+          <li>
+            <a id="donation" href="#"
+              ><i class="fas fa-donate"></i><b>Donate</b></a
+            >
+          </li>
+        </ul>
+        <br />
+        <hr />
+        <ul>
+          <li><a href="py00100.html">Chapter 1</a></li>
+          <li><a href="py00200.html">Chapter 2</a></li>
+          <li><a href="py00300.html">Chapter 3</a></li>
+          <li><a href="py00400.html">Chapter 4</a></li>
+          <li><a href="py00500.html">Chapter 5</a></li>
+          <li><a href="py00600.html">Chapter 6</a></li>
+          <li><a href="py00700.html">Chapter 7</a></li>
+          <li><a href="py00800.html">Chapter 8</a></li>
+        </ul>
+        <div>
+          <h5>Copyright 2021 - Codemugg Inc.<br />All Rights Reserved.</h5>
+        </div>
+        <div class="social_media">
+          <a href="https://facebook.com/codemugg" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/codemugg" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com/code.mugg" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://discord.gg/6YtH2j8cGe" target="_blank"
+            ><i class="fab fa-discord"></i
+          ></a>
+        </div>
+      </div>
+      <div class="main_content">
+        <div class="header">PYTHON COURSE FOR BEGINNERS.</div>
+        <div class="info">
+          <div>
+            <h2>MODULES:</h2><br />
+            After some time your code starts to get more complex with lots of functions and variables.<br>
+            To make it easier to organize the code we use Modules.<br>
+            A well-designed Module also has the advantage of being reusable, so you write code once and
+            reuse it everywhere.<br>
+            You can write a module with all the mathematical operations and other people can use it.<br>
+            And, if you need, you can use someone else's modules to simplify your code, speeding up your
+            project.<br>
+            In other programming languages, these are also referred to as libraries.<br><br>
+          </div>
+          <div>
+            <h2>USING A MODULE: </h2><br>
+            To use a module we use the <b>import</b> keyword. As the name implies we have to tell our program
+            what module to import.<br>
+            After that, we can use any function available in that module. Let's see an example using the
+            math module.<br>
+            First, let's see how to have access to a constant, Euler's number.<br><br>
+            <div class="code">
+                | # Euler's number<br>
+                | import math<br>
+                | <br>
+                | print(math.e)<br>
+                | <br>
+            </div>
+            <div class="codeout">
+                | 2.718281828459045
+            </div>
+            In this second example, we are going to use a function that calculates the square root of a
+            number.<br>
+            It is also possible to use the <b>as</b> keyword to create an alias.<br><br>
+            <div class="code">
+                | # Euler's number<br>
+                | import math as m<br>
+                | <br>
+                | print(m.e)<br>
+                | <br>
+            </div>
+            <div class="codeout">
+                | 2.718281828459045
+            </div>
+            Finally, using the from keyword, we can specify exactly what to import instead of the whole
+            module and use the function directly without the module's name.<br><br>
+            This example uses the floor() function that returns the largest integer less than or equal to a
+            given number.<br><br>
+            <div class="code">
+                | from math import floor<br>
+                | <br>
+                | print(floor(9.283))<br>
+                | <br>
+            </div><br>
+            <div class="codeout">
+                | 9
+            </div><br>
+          </div>
+          <div>
+            <h2>IMPORTING BUILT-IN MODULES:</h2><br>
+            Python comes with many built-in modules.<br>
+            Earlier in the above examples we used the math module, to calculate floor value of a float
+            number and to find the square root of an integer number.<br>
+            Let's take a look over the basic built-in modules in python which are mostly used by
+            programmers.<br><br>
+            <div class="subtitle">STATISTICS</div>
+            This module is widely used by programmers to perform statistical operations on a give sample
+            data, mostly in the form of lists.<br>
+            <div class="subtitle">Mean</div>
+            A <b>mean()</b> function is used to calculate the mean of a given list of numbers.
+            <div class="code">
+                | import statistics as stats<br>
+                | List_of_numbers = [10,23,15,28,11,20]<br>
+                | print(stats.mean(List_of_numbers))<br><br>
+            </div>
+            <div class="codeout">
+                17.833333333333332
+            </div>
+            <div class="subtitle">Mode</div>
+            A <b>mode()</b>  function returns the element from a list, which has appeared multiple times..
+            <div class="code">
+                | import statistics as stats<br>
+                | List_of_numbers = [10,23,15,28,11,28,20]<br>
+                | print(stats.mode(List_of_numbers))<br><br>
+            </div>
+            <div class="codeout">
+                | 28
+            </div>
+            <div class="subtitle">Median</div>
+            The function <b>median()</b>  returns the median of a list.
+            <div class="code">
+                | import statistics as stats<br>
+                | List_of_numbers = [10,23,15,28,11,20]<br>
+                | print(stats.median(List_of_numbers))<br><br>
+            </div>
+            <div class="codeout">
+                | 17.5
+            </div>
+            <div class="subtitle">Stdev</div>
+            The function calculates the standard deviation on a list of sample numbers.
+            <div class="code">
+                | import statistics as stats<br>
+                | List_of_numbers = [10,23,15,28,11,20]<br>
+                | print(stats.stdev(List_of_numbers))<br><br>
+            </div>
+            <div class="codeout">
+                | 7.521398046336104
+            </div><br><br>
+            <div class="subtitle">RANDOM</div><br>
+            At times, when you have to generate a random number in a program, you can use the Random
+            module to do so.<br>
+            The Random module consists of many built-in functions.<br>
+            Let's take a look over them.<br>
+                <br>
+            <div class="subtitle">random()</div>
+            The <b>random()</b> function generates any random float number between the range 0.0 to 1.0.
+            <div class="code">
+                | import random<br>
+                | print(random.random())<br><br>
+            </div>
+            <div class="codeout">
+                | 0.8947586965842
+            </div>
+            <div class="subtitle">randint()</div>
+            The <b>randint()</b> function generates a random number, which lies between the specified range.
+
+            <div class="code">
+                | import random<br>
+                | print(random.randint(0, 15))<br><br>
+            </div>
+            <div class="codeout">
+                | 0
+            </div>
+            <div class="subtitle">choice()</div>
+            A <b>choice()</b> function returns any random element from a given sequence of strings.
+            <div class="code">
+                | import random<br>
+                | Languages = ['C++','Python','Java']<br>
+                | print(random.choice(Languages))<br><br>
+            </div>
+            <div class="codeout">
+                | Python
+            </div>
+            <b>Note :</b> All the example codes given in this section will generate a different value every time
+            when you execute the program. So don’t worry if your output is different from the outputs
+            displayed below the code.<br><br>
+          </div>
+          <div>
+            <h2>IMPORTING OTHER MODULES</h2><br>
+            You can also create your own modules in python and use them in other files.<br>
+            Lets see an example.<br>
+            Firstly, create a folder named ‘Modules’ on your computer.<br>
+            Inside the folder ‘Modules’, create a two files called ‘welcome.py’ and ‘display.py’.<br>
+            In ‘welcome.py’ define the following function and save the file.<br><br>
+            <div class="code">
+                | # filename = welcome.py<br>
+                | def Welcome():<br>
+                | &nbsp; print("Welcome to Codemugg..!")<br><br>
+            </div>
+            Now, In your ‘display.py’ file write the following code.<br><br>
+            <div class="code">
+                | # filename = display.py<br>
+                | welcome.Welcome()<br>
+            </div>
+            <div class="codeout">
+                | Welcome to Codemugg..!
+            </div>
+            In the above example, you used the import keyword to use code from your first module in your
+            second module.<br><br>
+            When you import a module into another module the code written in the first_module gets
+            executed.<br><br>
+            <div class="code">
+              | # filename = first_module.py<br>
+              | print('This is the code written in first_module.')<br>
+          </div>
+          <div class="code">
+            | # filename = second_module.py<br>
+            | import first_module<br>
+        </div>
+        After executing the second_module.py, you’ll get the following output.<br><br>
+          <div class="codeout">
+              |This is the code written in first_module.
+          </div>
+          This behavior can be inconvenient.<br>
+          For instance, you might have test code in your module that you do not want to run when you
+           import it.<br>
+          You can solve this problem by putting all of the code in your module within the statement
+          <b>if __name__ == "__main__"</b>.<br>
+          Let's use the ‘<b>if __name__ == "__main__"</b>’ in the first_module.py file.<br><br>
+          <div class="code">
+            | # filename = first_module.py<br>
+            | if __name__ == '__main__'<br>
+            | &nbsp; print('This is the code written in first_module.')<br>
+        </div>
+        When you run this program, the output is still the same. But when you import it in
+        second_module.py, the code from first_module.py no longer runs, and ‘Hey! This is the code
+        written in first_module.’ is not displayed
+          </div>
+            <a href="py00500.html" class="previous">&laquo; Previous</a>
+            <a href="py00700.html" class="next" style="float: right;">Next &raquo</a>
+          </div>
+          <iframe src="https://trinket.io/embed/python/8119fce88f" title="Python Terminal" noresize=yes>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

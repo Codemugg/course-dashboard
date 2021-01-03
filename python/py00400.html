@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:src" content="assets/images/index-meta.png" />
+    <meta property="og:image" content="assets/images/index-meta.png" />
+    <meta
+      name="twitter:title"
+      content="Codemugg - Learning Without A Price Tag"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/codemugg-logo-white-1.png"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Codemugg is a non-profit organization that aims to provide free courses on programming being said that learning should never come with a price."
+    />
+    <title>Codemugg Course Template</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h2>Codemugg Inc</h2>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-address-book"></i>Contact</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-pencil-alt"></i>Courses</a>
+          </li>
+          <li>
+            <a id="donation" href="#"
+              ><i class="fas fa-donate"></i><b>Donate</b></a
+            >
+          </li>
+        </ul>
+        <br />
+        <hr />
+        <ul>
+          <li><a href="py00100.html">Chapter 1</a></li>
+          <li><a href="py00200.html">Chapter 2</a></li>
+          <li><a href="py00300.html">Chapter 3</a></li>
+          <li><a href="py00400.html">Chapter 4</a></li>
+          <li><a href="py00500.html">Chapter 5</a></li>
+          <li><a href="py00600.html">Chapter 6</a></li>
+          <li><a href="py00700.html">Chapter 7</a></li>
+          <li><a href="py00800.html">Chapter 8</a></li>
+        </ul>
+        <div>
+          <h5>Copyright 2021 - Codemugg Inc.<br />All Rights Reserved.</h5>
+        </div>
+        <div class="social_media">
+          <a href="https://facebook.com/codemugg" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/codemugg" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com/code.mugg" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://discord.gg/6YtH2j8cGe" target="_blank"
+            ><i class="fab fa-discord"></i
+          ></a>
+        </div>
+      </div>
+      <div class="main_content">
+        <div class="header">PYTHON COURSE FOR BEGINNERS.</div>
+        <div class="info">
+          <div>
+            <h2>FUNCTIONS IN PYTHON:</h2><br /><br />
+            <h2>FUNCTIONS:</h2><br />
+            Functions are the best way to organize your code.<br><br>
+            Using a function you can divide a complex program into small blocks of code, which makes it
+            simpler to solve. The reusability of code can be done without repeatedly writing the code.<br><br>
+          </div>
+          <div>
+            <h2>DECLARING & DEFINING A FUNCTION:</h2><br>
+            Python uses keyword ‘<b>def</b>’ to declare a function in a program.<br>
+            Python doesn’t need an explicit declaration of a function as in ‘C’ Language .<br>
+            To define a function, you just need to indent the block of code that is to be executed when the
+            function is invoked.<br>
+            Following is the syntax for declaring and defining a function in python:<br><br>
+            <div class="code">
+                | def FunctionName( PARAMETERS ):<br>
+                | <br>
+                | &nbsp; BLOCK OF STATEMENTS<br>
+                | <br>
+                | FunctionName( ARGUMENTS )<br>
+              </div>
+              You can implement the following program to understand how the function is defined, declared
+              and invoked in python.<br><br>
+              <div class="code">
+                | def display():<br>
+                | <br>
+                | &nbsp; print('You are inside the function.')<br>
+                | <br>
+                | print("You are going to enter in the function.")<br>
+                | display()<br>
+                | print("Program executed successfully..!")<br>
+              </div> 
+              <div class="codeout">
+                | You are going to enter in the function.<br>
+                | You are inside the function.<br>
+                | Program executed successfully..!<br>
+                | <br>
+              </div>
+          </div>
+          <div><br><br>
+            <h2>ARGUMENTS: </h2><br>
+            You can define parameters between the parentheses next to the function name. When calling a
+            function with parameters you have to pass arguments according to the parameters defined.<br>
+            A function can either have a single argument or multiple arguments.
+            <div class="subtitle">Single Argument: </div>
+            To specify one parameter, just define it inside the parentheses next to the function name. In this
+            example, the function my_number expects one number as an argument defined by the parameter
+            num. The value of the argument is then accessible inside the function to be used.<br><br>
+            <div class="code">
+                | def my_number(num):<br>
+                | <br>
+                | &nbsp; print(num)<br>
+                | <br>
+                | first_num = 150<br>
+                | my_number(first_num)<br>
+              </div> 
+              <div class="codeout">
+                | 110<br>
+              </div>
+              <div class="subtitle">Multiple Argument: </div>
+              To specify multiple parameters, just define it inside the parentheses next to the function name.
+                In this example, the function my_number expects two numbers as an argument defined by the
+                parameter num1, num2. The value of the argument is then accessible inside the function.<br><br>
+              <div class="code">
+                  | def my_number(first_num, second_num):<br>
+                  | <br>
+                  | &nbsp; print(first_num, second_num)<br>
+                  | <br>
+                  | number1 = 150<br>
+                  | number2 = 200<br>
+                  | my_number(number1, number2)<br>
+                </div> 
+                <div class="codeout">
+                  | 110 200<br>
+                </div>
+                This syntax of defining parameters and passing arguments is the same for any number of parameters.
+                <b>Note:</b> The arguments have to be passed in the same order that the parameters are defined.
+                <div class="subtitle">Default value : </div>
+                You can set a default value for a parameter if no argument is given using the ‘=’ operator and a
+                value of choice.<br>
+                In this function, if no argument is given, the number 120 is assumed as the expected value by
+                default
+                <br><br>
+              <div class="code">
+                  | def my_number(first_num=15):<br>
+                  | <br>
+                  | &nbsp; print(first_num)<br>
+                  | <br>
+                  | my_number()<br>
+                </div> 
+                <div class="codeout">
+                  | 15<br>
+                </div>
+                Lets try passing an argument in the above function.
+                <div class="code">
+                    | def my_number(first_num=15):<br>
+                    | <br>
+                    | &nbsp; print(first_num)<br>
+                    | <br>
+                    | my_number(20)<br>
+                  </div> 
+                  <div class="codeout">
+                    | 20<br>
+                  </div>
+                  The function then sets the value of first_num to 20 and then prints it.
+                  <div class="subtitle">Keyword or Named Arguments : </div><br>
+                  When calling a function, the order of the arguments have to match the order of the parameters.<br>
+                  The alternative is if you use keywords or named arguments.<br>
+                  Set the arguments to their respective parameters directly using the name of the parameters and
+                  the ‘=’ operators.<br>
+                  This example flips the arguments, but the function works as expected because you tell it which
+                  value goes to which parameter by name.
+                <br><br>
+              <div class="code">
+                  | def my_number(first_num,second_num):<br>
+                  | <br>
+                  | &nbsp; print('The numbers are: ',first_num,second_num)<br>
+                  | <br>
+                  | my_number(second_num=150,first_num=200)<br>
+                </div> 
+                <div class="codeout">
+                  | The numbers are : 200 150<br>
+                </div>
+                <div class="subtitle">Any number of arguments: *args </div><br>
+                If you don't want to specify the number of parameters, just use the * before the parameter name.
+                Then the function will take as many arguments as necessary. The parameter name could be
+                anything like *numbers, but there is a convention in Python to use *args for this definition of a
+                variable number of arguments.
+              <br><br>
+             <div class="code">
+                | def my_number(*args):<br>
+                | <br>
+                | &nbsp; for i in args:<br>
+                | &nbsp; &nbsp; print(i) <br>
+                | <br>
+                | my_number(100,10,2)<br>
+              </div> 
+              <div class="codeout">
+                | 100<br>
+                | 10<br>
+                | 2<br>
+              </div>
+              <div class="subtitle">Any number of Keyword/Named arguments: **kwargs </div><br>
+              **kwargs Similar to *args, we can use **kwargs to pass as many keyword arguments as we
+              want, as long as we use **.<br>
+              Again, the name could be anything like **numbers, but **kwargs is a convention.              
+              <br><br>
+             <div class="code">
+                | def my_number(**kwargs):<br>
+                | <br>
+                | &nbsp; for key,valur in kwargs.items():<br>
+                | &nbsp; &nbsp; print(key) <br>
+                | &nbsp; &nbsp; print(value) <br>
+                | <br>
+                | my_number(first_num=30,second_num=50)<br>
+              </div> 
+              <div class="codeout">
+                | first_num<br>
+                | 30<br>
+                | second_num<br>
+                | 50<br>
+              </div>
+              You can also pass on different data types as arguments to other functions.
+              Lets pass a string as an argument.
+              <div class="code">
+                | def my_function(name):<br>
+                | <br>
+                | &nbsp; print("My name is "+name)<br>
+                | <br>
+                | my_function('Sarah')<br>
+              </div> 
+              <div class="codeout">
+                | My name is Sarah<br>
+              </div>
+              Great..Now you know how to pass an argument in any function. Make sure you practice above programs.<br><br>
+              <div class="subtitle">Return : </div><br>
+              A <b>return</b> keyword is used to return a value from a function.<br>
+              In this example the function display_function() returns the string 'My Display function!'.<br>
+              Notice that print() is a built-in function and our function is called from inside it.<br>
+              The string returned by display_function() is passed as an argument to the print() function.          
+              <br><br>
+             <div class="code">
+                | def display():<br>
+                | <br>
+                | &nbsp; return("My Display Function.")<br>
+                | <br>
+                | print(display())<br>
+              </div> 
+              <div class="codeout">
+                | My Display Function.<br>
+              </div>
+              <div class="subtitle">Return multiple values: </div><br>
+              Functions can also return multiple values at once. return_numbers() returns two values simultaneously.          
+              <br><br>
+             <div class="code">
+                | def display():<br>
+                | <br>
+                | &nbsp; return(10,20)<br>
+                | <br>
+                | print(display())<br>
+              </div> 
+              <div class="codeout">
+                | (10, 20)<br>
+              </div>
+              Following program illustrates the addition of two numbers.<br><br>
+              <div class="code">
+                | def addition(x, y):<br>
+                | <br>
+                | &nbsp; return(x+y)<br>
+                | <br>
+                | num1 = 50<br>
+                | num2 = 50<br>
+                | result = addition(num1, num2)<br>
+                | print(result)<br>
+              </div> 
+              <div class="codeout">
+                | 100<br>
+              </div>
+          </div>
+          <div>
+            <h2>SCOPE OF VARIABLE :</h2><br>
+            The place where a variable is created defines its availability to be accessed and manipulated by
+            the rest of the code. This is known as scope.<br>
+            There are two types of scope: local and global.<br>
+            <div class="subtitle">Global Scope: </div><br>
+            A global scope allows you to use the variable anywhere in your program. If your variable is
+            outside a function, it has global scope by default.<br>
+            <div class="code">
+                | number = 10<br>
+                | def my_num():<br>
+                | <br>
+                | &nbsp; print('The number is',number)<br>
+                | <br>
+                | my_num()<br>
+              </div> 
+              <div class="codeout">
+                | The number is 10.<br>
+              </div><br>
+              <div class="subtitle">Local Scope: </div><br>
+              When you declare a variable inside a function, it only exists inside that function and can't be
+              accessed from the outside.<br><br>
+              <div class="code">
+                  
+                  | def my_num():<br>
+                  | <br>| &nbsp; number = 10<br>
+                  | &nbsp; print('The number is',number)<br>
+                  | <br>
+                  | my_num()<br>
+                </div> 
+                <div class="codeout">
+                  | The number is 10.<br>
+                </div>
+                In the above code, If you try to access the number outside the function it will throw an error.
+                <br><br>
+                <div class="subtitle">Mixing Scopes : </div><br>
+                If you use the same name for variables inside and outside a function, the function will use the
+                one inside its scope.<br>
+                So when you call my_number(), the number=10 is used to print the phrase.<br>
+                On the other hand, when calling print() outside the function scope, number=20 is used because
+                of its global scope.
+                <br><br>
+                <div class="code">
+                  | number = 20<br>
+                  | def my_num():<br>
+                  | <br>
+                  | &nbsp; number = 10<br>
+                  | &nbsp; print('The number is',number)<br>
+                  | <br>
+                  | my_num()<br>
+                  | print('The number is',number)<br>
+                </div> 
+                <div class="codeout">
+                  | The number is 10.<br>
+                  | The number is 20.<br>
+                </div>
+                <br><br>
+          </div>
+
+          <div>
+            <h2>BUILT-IN FUNCTIONS :</h2><br>
+            Python consists of many built-in functions. Built-In functions are functions which are
+            pre-defined by python and are known by the python interpreter. You just have to use those
+            functions, which makes it easier for you to develop a program.<br>
+            In this section you will learn the most basic built-in functions in python.<br><br>
+            Let's start with the input() function:<br><br>
+            <div class="subtitle">Input :</div><br><br>
+            If you need to interact with a user when running your program in the command line (for
+            example, to ask for a piece of information), you can use the <b>input()</b> function.
+            <div class="code">
+                | name = input('Enter your name: ')<br>
+                | print('Welcome to Codemugg !',name)<br>
+                | <br>
+              </div> 
+              <div class="codeout">
+                | Enter your name: Sarah
+                | Welcome to Codemugg ! Sarah<br>
+              </div>
+            Anything that is entered by the user, is treated as a string by input() function. Hence, if you
+            want an integer input from the user, you will have to convert the input explicitly.<br><br>
+            <div class="code">
+                | num = int(input('Enter your number: '))<br>
+                | print('You entered ',num)<br>
+                | <br>
+              </div> 
+              <div class="codeout">
+                | Enter your name: 50<br>
+                | You entered 50<br>
+              </div>
+              In a similar way, if you want a float value, you can convert it using explicit conversion.
+          </div>
+          <div>
+            <h2>USER DEFINED FUNCTIONS :</h2><br>
+            User Defined functions are the functions which are declared and defined by the user. All the
+            functions that you have implemented in your programs are called as user defined functions.<br>
+            For example,<br><br>
+            <div class="code">
+                | def display():<br>
+                | &nbsp; print("I'm a user defined function.")<br>
+                | <br>
+                | display()<br>
+              </div> 
+              <div class="codeout">
+                | I'm a user defined function.<br>
+              </div>
+          </div>
+          <div>
+            <h2>LAMBDA FUNCTION:</h2><br>
+            A Python lambda function can only have one expression and can't have multiple lines.
+            It is supposed to make it easier to create some small logic in one line instead of a whole
+            function as is usually done.<br>
+            Lambda functions are also anonymous, which means there is no need to name them<br><br>
+            The basic syntax is very simple: just use the lambda keyword, define the parameters needed,
+            and use the ":" operator to separate the parameters from the expression.<br>
+            The general forms is:<br>
+            <div class="code">
+                | <br>
+                | lambda ARGUMENTs : EXPRESSION <br>
+                | <br>
+            </div>
+            <div class="subtitle">Single parameter example :</div><br><br>
+            Look at this example using only one parameter.<br><br>
+            <div class="code">
+                | cubic = lambda x: x**3<br>
+                | print(cubic(5))<br>
+                | <br>
+              </div> 
+              <div class="codeout">
+                | 125<br>
+              </div>
+              <div class="subtitle">Multiple parameter :</div><br><br>
+              If you want, you can also have multiple parameters.<br>
+              Following program calculates the simple interest on the principal amount.<br><br>
+              <div class="code">
+                  | simple_interest = lambda price*years*rate: (price*years*rate)//100<br>
+                  | print(simple_interest(10000,2,0.5))<br>
+                  | <br>
+                </div> 
+                <div class="codeout">
+                  | 100.00<br>
+                </div>
+                Lets execute the same program by calling the lambda function directly, without using any
+                variable.<br><br>
+                <div class="code">
+                    | print((lambda price*years*rate: (price*years*rate)//100)(10000,2,0.5))<br>
+                    | <br>
+                  </div> 
+                  <div class="codeout">
+                    | 100.00<br>
+                  </div><br>
+                Using lambda functions with other built-in functions
+                <div class="subtitle">Map :</div><br><br>
+                The Map function applies the expression to each item in a list.<br>
+                Let's calculate the cubic of each number in the list.<br><br>
+              <div class="code">
+                  | numbers = [2, 5, 10]<br>
+                  | cubic = list(map(numbers, lambda x: x**3))<br>
+                  | print(cubic)<br>
+                </div> 
+                <div class="codeout">
+                  | [8, 25, 1000]<br>
+                </div>  
+                <div class="subtitle">Filter :</div><br><br>
+                The Filter function will filter the list based on the expression.<br>
+                Let's filter to have only the numbers greater than 5.<br><br>
+              <div class="code">
+                  | numbers = [2, 5, 7, 10]<br>
+                  | filtered_numbers = list(filter(numbers, lambda x: x &#60 10))<br>
+                  | print(filtered_numbers)<br>
+                </div> 
+                <div class="codeout">
+                  | [2, 5, 7]<br>
+                </div>
+                <div> 
+                <h2>EXCEPTION HANDLING:</h2><br>
+                Errors are a part of every developer’s life, and knowing how to handle those errors is a skill on
+                it’s own.<br>
+                The way Python deals with errors is called 'Exception Handling'.<br>
+                If some piece of code runs into an error, the Python interpreter will raise an exception.<br><br>
+                <div class="subtitle">Types of Exceptions</div><br>
+                Let's try to raise some exceptions on purpose and see the errors they produce.
+                <br><br>
+                <div class="subtitle">TypeError</div><br>
+                The best way to raise a TypeError is adding a string to integer value.<br>
+                Lets try it.
+                <br><br>
+                <div class="code">
+                    | result = 'The string is '+15<br>
+                    | print(result)<br>
+                  </div> 
+                  <div class="codeout">
+                    | Traceback (most recent call last):<br>
+                    | File "pyshell#0", line 1, in module<br>
+                    |  &nbsp; 'The string is'+15<br>
+                    | TypeError: can only concatenate str (not "int") to str<br>
+                  </div>
+                  <div class="subtitle">IndexError</div><br>
+                  Now, try to access an index that doesn't exist in a list.<br>
+                  A common mistake is to forget that sequences are 0-indexed, meaning the first item has index 0,
+                  not 1.<br>
+                  In this example, the list of subjects ends at index 2.<br>
+                  Lets try accessing the 4th element with index 3.<br>
+                <br><br>
+                <div class="code">
+                    | subjects = ['Maths', 'English', 'Physics']<br>
+                    | print(subjects[3])<br>
+                  </div> 
+                  <div class="codeout">
+                    | Traceback (most recent call last):<br>
+                    |  File "pyshell#2", line 1, in module<br>
+                    |  &nbsp; print(subjects[3])<br>
+                    |    IndexError: list index out of range<br>
+                  </div>
+                  <div class="subtitle">NameError</div><br>
+                  If we try to print a variable that doesn't exist:<br>
+                <br><br>
+                <div class="code">
+                    | print(variable_name)<br>
+                  </div> 
+                  <div class="codeout">
+                    | Traceback (most recent call last):<br>
+                    | File "pyshell#3", line 1, in module<br>
+                    |  &nbsp;  print(variable_name)<br>
+                    | NameError: name 'variable_name' is not defined<br>
+                  </div>
+                  <div class="subtitle">ZeroDivision</div><br>
+                  Math doesn't allow division by zero, so trying to do so will raise an error, as expected.<br>
+                <br><br>
+                <div class="code">
+                    | 7 / 0<br>
+                  </div> 
+                  <div class="codeout">
+                    | Traceback (most recent call last):<br>
+                    | File "pyshell#4", line 1, in module<br>
+                    | &nbsp;  7/0<br>
+                    | ZeroDivisionError: division by zero<br>
+                  </div>   
+                  <div class="subtitle">Exception Handling</div><br>
+                  Now we know how to cause errors that will crash our code and show us some message saying
+                  something is wrong.<br>
+                  To handle these exceptions just make use of the try/except statement.<br>
+                <br><br>
+                <div class="code">
+                    | try;<br>
+                    | &nbsp; print(variable_name)<br>
+                    | <br>
+                    | except: <br>
+                    | &nbsp; print('Variable not found.')<br>
+                    | <br>
+                  </div> 
+                  <div class="codeout">
+                    | Variable not found.<br>
+                  </div> 
+                  The example above shows the use of the try statement.<br><br>
+                  Put the block of code that may cause an exception inside the try scope.<br>
+                    If everything runs alright, the except block is not invoked.<br>
+                    But if an exception is raised, the block of code inside the except is executed.<br>
+                    This way the program doesn't crash and if you have some code after the exception, it will keep
+                    running if you want it to.<br>              
+            </div> 
+            <div class="subtitle">Specific Exception Handling</div><br>
+            In the last example the except block was generic, meaning it was catching anything. Good
+            practice it to specify the type of exception we are trying to catch, which helps a lot when
+            debugging the code later.<br>
+            If you know a block of code can throw an IndexError, specify it in the except:<br>
+                <br><br>
+                <div class="code">
+                    | try;<br>
+                    | &nbsp; subject = ['Maths', 'English', 'Physics']<br>
+                    | &nbsp; print(subject[3])<br>
+                    | <br>
+                    | except IndexError: <br>
+                    | &nbsp; print('Index out of range.')<br>
+                    | <br>
+                  </div> 
+                  <div class="codeout">
+                    | Index out of range<br>
+                  </div> 
+            You can use a tuple to specify as many exception types as you want in a single except:<br><br>
+            <div class="code">
+                | try;<br>
+                | &nbsp; print('My Code !')<br>
+                | <br>
+                | except (IndexError, NameError, TypeError): <br>
+                | &nbsp; print('There is an error.')<br>
+                | <br>
+              </div> 
+              <div class="codeout">
+                | My Code !<br>
+              </div> 
+              You can also add an else command at the end of the try/except. It runs only if there are no
+                exceptions.
+                <div class="code">
+                    | my_var = 'My Variable'
+                    | try;<br>
+                    | &nbsp; print(my_var)<br>
+                    | <br>
+                    | except NameError: <br>
+                    | &nbsp; print('NameError caught.')<br>
+                    | else:
+                    | &nbsp; print('No NameError')
+                    | <br>
+                  </div> 
+                  <div class="codeout">
+                    | My Variable<br>
+                    | No NameError<br>
+                  </div>  
+                  <div class="subtitle">Raising Exceptions</div><br>
+                  The raise command allows you to manually raise an exception.<br>
+                  This is particularly useful if you want to catch an exception and do something with it -- like
+                    logging the error in some personalized way like redirecting it to a log aggregator, or ending the
+                    execution of the code since the error should not allow the progress of the program.<br>
+                  If you know a block of code can throw an IndexError, specify it in the except:<br>
+                      <br><br>
+                      <div class="code">
+                          | try;<br>
+                          | &nbsp; raise IndexError('This index is not allowed.')<br>
+                          | <br>
+                          | except IndexError: <br>
+                          | &nbsp; print('Doing something with exception')<br>
+                          | &nbsp; raise<br>
+                          | <br>
+                        </div> 
+                        <div class="codeout">
+                            | Doing something with exception<br>
+                            | Traceback (most recent call last):<br>
+                            | &nbsp;   File "pyshell#5", line 2, in module<br>
+                            | &nbsp; &nbsp;    raise IndexError('This index is not allowed.')<br>
+                            | IndexError: This index is not allowed.<br>
+                        </div>
+                        <div class="subtitle">Finally</div><br>
+                        The finally block is executed independently of exceptions being raised or not.<br>
+                        They are usually there to allow the program to clean up resources like files, memory, network
+                        connections, etc.<br><br>
+                            <div class="code">
+                                | try;<br>
+                                | &nbsp; print(my_var)<br>
+                                | <br>
+                                | except NameError: <br>
+                                | &nbsp; print('Except Block')<br>
+                                | finally;<br>
+                                | &nbsp; print('Finally Block')<br>
+                                | <br>
+                              </div> 
+                              <div class="codeout">
+                                  | Doing something with exception<br>
+                                  | Traceback (most recent call last):<br>
+                                  |   File "pyshell#5", line 2, in module<br>
+                                  | &nbsp;    raise IndexError('This index is not allowed.')<br>
+                                  | IndexError: This index is not allowed.<br>
+                              </div> 
+                    <b>Congrats..You completed the 4th section</b>           
+            </div>
+            <a href="py00300.html" class="previous" >&laquo; Previous</a>
+            <a href="py00500.html" class="next" style="float: right;">Next &raquo</a> 
+          </div>
+          <iframe src="https://trinket.io/embed/python/8119fce88f" title="Python Terminal" noresize=yes>
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:src" content="assets/images/index-meta.png" />
+    <meta property="og:image" content="assets/images/index-meta.png" />
+    <meta
+      name="twitter:title"
+      content="Codemugg - Learning Without A Price Tag"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/codemugg-logo-white-1.png"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Codemugg is a non-profit organization that aims to provide free courses on programming being said that learning should never come with a price."
+    />
+    <title>Codemugg Course Template</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h2>Codemugg Inc</h2>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-address-book"></i>Contact</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-pencil-alt"></i>Courses</a>
+          </li>
+          <li>
+            <a id="donation" href="#"
+              ><i class="fas fa-donate"></i><b>Donate</b></a
+            >
+          </li>
+        </ul>
+        <br />
+        <hr />
+        <ul>
+          <li><a href="py00100.html">Chapter 1</a></li>
+          <li><a href="py00200.html">Chapter 2</a></li>
+          <li><a href="py00300.html">Chapter 3</a></li>
+          <li><a href="py00400.html">Chapter 4</a></li>
+          <li><a href="py00500.html">Chapter 5</a></li>
+          <li><a href="py00600.html">Chapter 6</a></li>
+          <li><a href="py00700.html">Chapter 7</a></li>
+          <li><a href="py00800.html">Chapter 8</a></li>
+        </ul>
+        <div>
+          <h5>Copyright 2021 - Codemugg Inc.<br />All Rights Reserved.</h5>
+        </div>
+        <div class="social_media">
+          <a href="https://facebook.com/codemugg" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/codemugg" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com/code.mugg" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://discord.gg/6YtH2j8cGe" target="_blank"
+            ><i class="fab fa-discord"></i
+          ></a>
+        </div>
+      </div>
+      <div class="main_content">
+        <div class="header">PYTHON COURSE FOR BEGINNERS.</div>
+        <div class="info">
+          <div>
+            <h2>INTRODUCTION TO PYTHON PROGRAMMING:</h2><br>
+          </div>
+          <div>
+            <h2>SYNTAX: </h2><br>
+            Syntax is the set of rules, principles, and processes that govern the structure of sentences
+            in a given language, specifically word order. Each programming language has a particular
+            syntax, so does python.<br>
+            Python is also liked by developers because of it’s clean syntax. The language avoids
+            using unnecessary characters to indicate some specificity.
+            <br><br>
+          </div>
+          <div>
+            <h2>COMMENTS: </h2><br>
+            Comments are the statements written in English which describes what a particular code
+            does. A comment is preceded by a symbol telling the programming language you are using, to
+            ignore that line (or part of a line) of code. In Python, the pound ‘#’ symbol is used to create
+            comments.<br>
+            Programmers use comments to make a line of code easier to understand for whoever
+            reads it. You can write anything in your comments as long as it’s one line long.<br><br>
+            <b>Note:</b> You should use comments sparingly. Do not comment explaining every single line of
+            code in your program.<br><br>
+            Following is an example of a good comment:<br><br>
+            <div class="code">
+              |<br>
+              | #Calculates area of Circle<br>
+              | def circle():<br>
+              | &nbsp; Radius = 5<br>
+              | &nbsp; Area = 3.14*pow(2, Radius)<br>
+              | return Area<br>
+              | <br>
+              | Results = circle()<br>
+              | print(Results)<br>
+            </div>
+            Here, ‘<b> # Calculates area of circle </b>’ is a useful comment which tells us the purpose of defining
+            that function i.e. to calculate and return the area of the circle.<br><br>
+          </div>
+          <div>
+            <h2>CONSTANTS & VARIABLES: </h2><br>
+            Constants are the values which remain unchanged until the entire program is executed
+            and terminated. Each number that we use in our program is a constant; i.e. the number 10 will
+            always represent the value 10.<br>
+            On the other hand, Variables are used to store and manipulate data to implement a flow or
+            some specific logic.<br><br>
+            <div class="code">
+              | 100 * 100<br>
+              | 20 + 20<br>
+            </div>
+            <div class="codeout">
+              | 10000<br>
+              | 40<br>
+            </div>
+            In some programming languages, you have to declare a variable by specifying the data
+            type of the value that is to be stored. For an instance, in the C programming you create a
+            variable like this: <b>int a;</b><br>
+            Creating and declaring a variable in python is lucid and straightforward.<br>
+            Just pick a variable_name and assign a value to it using the ‘<b> = </b>’ symbol (assignment operator).
+            Remember to try out these following examples in the Interactive shell.<br><br>
+            <div class="code">
+              | <br>
+              | var = 150<br>
+              | print(var)<br>
+              | name = 'Ben'<br>
+              | print(name)<br>
+            </div>
+            <div class="codeout">
+              | 150<br>
+              | Ben<br>
+            </div>
+            Here, the assignment operator i.e. ‘<b> = </b>’ sign, assigns the right value to the left
+            variable_name. So, make sure that you write all the values towards the right side of the
+            assignment operator and variable names on the left.<br><br>
+            You can name variables whatever you'd like, as long as you follow these rules:<br>
+            1. Variables can't have spaces. If you want to use two words in a variable, put an underscore
+            between them: <br> <B>i.e.,my_variable = "A string!"</B> .<br>
+            2. Variable names can only contain letters, numbers, and the underscore symbol.<br>
+            3. You cannot start a variable name with a number. Although, you can start a variable with an
+            underscore.<br>
+            4. You cannot use Python keywords for variable names.<br><br>
+          </div>
+          <div>
+            <h2>DATA TYPES: </h2><br>
+            Every variable in python has a specific type depending upon the value of data stored in
+            the variable. In Python, each data value, like 2 or "Hello, World!", is called an object. You’ll
+            learn about the objects later in this course, for now think about objects as a data value which has
+            a name, data type and attributes.<br>
+            Python has dynamic typing, which means you don't have to explicitly declare the type of
+            your variable -- but if you want to, you can.<br>
+            Firstly, Let’s try to understand how we can check the data type of a particular variable.<br>
+            For this purpose, python comes with an inbuilt function called type(), which takes a variable
+            name as an argument and determines its data type.<br>
+            Take a look over following sample programs:<br><br>
+            <div class="code">
+              | num = 110<br>
+              | print(type(num))<br>
+              | string = 'Welcome To Codemugg'<br>
+              | print(type(string))
+            </div>
+            <div class="codeout">
+              | &#60; class 'int' &#62;<br>
+              | &#60; class 'str' &#62;<br>
+            </div>
+            In the above example, the ‘<b>print(type(num))</b>’ determines the type of variable num and
+            displays it on the shell . The output ‘ <b>&#60; class 'int' &#62;</b> ’ denotes that the variable holds an int
+            value i.e. an integer value.<br><br>
+            Now, as you have learnt how to check the type of a particular variable. Lets explore the data
+            types in Python.<br><br>
+            <div class="subtitle">Numeric Data Type: </div><br>
+            There are three types of numeric types: int, float, and complex.<br><br>
+            Int denotes any integer or numeric value that can either be positive or negative. Whole numbers
+            (1, 2, 3, 4, etc.) and all the negative numbers(-1, -2, -3,etc) have the data type int, which is short
+            for integer.<br><br>
+            <div class="code">
+              | num = 110<br>
+              | print(type(num))<br>
+            </div>
+            <div class="codeout">
+              | &#60; class 'int' &#62;<br>
+            </div><br>
+            Complex data types are used to represent a complex number.<br><br>
+            <div class="code">
+              | complex_num = 25+4j<br>
+              | print(type(complex_num))<br>
+            </div>
+            <div class="codeout">
+              | &#60; class 'complex' &#62;<br>
+            </div><br><br>
+            Float represents a decimal value( that is a number with a decimal point). 2.1, 8.2, and 9.9999 are
+            all objects with the float data type. They are called floating point numbers. Like all data types,
+            floating-point numbers have unique properties and behave in a certain way, similarly to
+            integers.<br><br>
+            <div class="code">
+              | float_num = 93.66<br>
+              | print(type(float_num))<br>
+            </div>
+            <div class="codeout">
+              | &#60; class 'float' &#62;<br>
+            </div><br><br>
+            <div class="subtitle">Boolean Values: </div><br>
+            Boolean are the objects with bool data type, and have a value of True or False.<br><br>
+            <div class="code">
+              | bool_var = 93.66<br>
+              | print(type(bool_var))<br>
+            </div>
+            <div class="codeout">
+              | &#60; class 'bool' &#62;<br>
+            </div><br><br>
+            <div class="subtitle">None Data Type : </div><br>
+            Objects with a data type NoneType always have the value None. They are used to represent the
+            absence of value.<br><br>
+            <div class="code">
+              | None<br>
+            </div><br><br>
+            <div class="subtitle">String : </div><br>
+            String is the data type which represents a collection of various characters. There are many string
+            manipulation techniques, which you’ll learn in the third section of this course. A string in
+            python always begins and ends with either a single quotation or a double quotation.<br><br>
+            <div class="code">
+              | my_string = 'I love Coding.'<br>
+              | print(my_string)<br>
+              | print(type(my_string))<br>
+            </div>
+            <div class="codeout">
+              | I love Coding.<br>
+              | &#60; class 'str' &#62;<br>
+            </div><br><br>
+            <div class="subtitle">Lists : </div><br>
+            Lists in python can represent an ordered collection of different elements. Lists are mutable
+            which means they can be modified after their creation.
+            <br><br>
+            <div class="code">
+              | my_list = ['Code', 12, 25.3]<br>
+              | print(my_list)<br>
+              | print(type(my_list))<br>
+            </div>
+            <div class="codeout">
+              | ['Code', 12, 25.3]<br>
+              | &#60; class 'list' &#62;<br>
+            </div><br><br>
+            <div class="subtitle">Tuples : </div><br>
+            Tuples are just like lists which represent an ordered collection of elements. Unlike lists, Tuples
+            are immutable which means they can’t be modified once they are created.
+            <br><br>
+            <div class="code">
+              | my_tuple = ('Code', 12, 25.3)<br>
+              | print(my_tuple)<br>
+              | print(type(my_tuple))<br>
+            </div>
+            <div class="codeout">
+              | ('Code', 12, 25.3)<br>
+              | &#60; class 'tuple' &#62;<br>
+            </div><br><br>
+            <div class="subtitle">Sets : </div><br>
+            Sets are a collection of non-repetitive unordered elements which aren’t indexed.
+            <br><br>
+            <div class="code">
+              | my_set = {'Tim','Bill','Steve'}<br>
+              | print(my_set)<br>
+              | print(type(my_set))<br>
+            </div>
+            <div class="codeout">
+              | {'Tim', 'Bill', 'Steve'}<br>
+              | &#60; class 'set' &#62;<br>
+            </div><br><br>
+            <div class="subtitle">Dictionaries :</div><br>
+            Dictionaries don't guarantee the order of the elements and are mutable. One important
+            characteristic in dictionaries is that you can set your own access keys for each element.
+            <br><br>
+            <div class="code">
+              | my_dict = {Name: 'Tim', Contact: '***969699856'}<br>
+              | print(my_dict)<br>
+              | print(type(my_dict))<br>
+            </div>
+            <div class="codeout">
+              | {Name: 'Tim', Contact: '***969699856'}<br>
+              | &#60; class 'dict' &#62;<br>
+            </div><br><br>
+          </div>
+          <div>
+            <h2>TYPE CASTING :</h2><BR>
+            Type casting refers to conversion of one data type into another. It can be done using an
+            explicit conversion method.<BR><BR>
+            This way you can turn an int into a str, or a float into int.<BR>
+            For an instance,<BR>
+            Lets convert an integer value into a string using <B>str()</B>.<BR><br>
+            <div class="code">
+              | int_number = 55<br>
+              | print(type(int_number))<br>
+              | string_num = str(int_number)<br>
+              | print(type(string_num))<br>
+            </div>
+            <div class="codeout">
+              | &#60; class 'int' &#62;<br>
+              | &#60; class 'str' &#62;<br>
+            </div><br><br>   
+            The above code converts the integer value into a string
+            Similarly, you can try converting a variable into integer using <b>int()</b> function, or you can
+            convert it into float using <b>float()</b> function.<br><br>
+            <div class="subtitle">Implicit and Explicit conversions :</div><br>
+            The example below shows implicit conversion while adding an int and a float.<br><br>
+            <div class="code">
+              | int_number = 45<br>
+              | float_num = 45.20<br>
+              | sum_intfloat = int_number + float_num<br>
+              | print(sum_intfloat)<br>
+              | print(type(sum_intfloat))<br>
+              | print(int(sum_intfloat))<br>
+            </div>
+            <div class="codeout">
+              | 90.2<br>
+              | &#60; class 'float' &#62;<br>
+              | 90<br>
+            </div>
+            Notice that sum_intfloat is float. Python uses float to avoid data loss since the int type can not
+            represent the decimal digits.<br>
+            If you still want your answer in integer format, you can use the int() function to convert it
+            explicitly.<br>
+            Remenber in some cases, you can’t use implicit conversion.<br>
+            For example:<br>
+            Take a look at following code, where we try to add an integer value and a string value.<br><br>
+            <div class="code">
+              | int_number = 15<br>
+              | string = 32<br>
+              | my_sum = int_number + string<br>
+              | print(my_sum)<br>
+            </div>
+            <div class="codeout">
+              | Traceback (most recent call last):<br>
+              | File "pyshell#0", line 1, in module<br>
+              |  &nbsp; my_sum = int_number + string<br>
+              | TypeError: unsupported operand type(s) for +: 'int' and 'str'<br>
+            </div>
+            The above code gives an error because a string can’t be added to an integer. Hence, it becomes
+            necessary to explicitly convert the string into integer before adding it to the number.<br><br>
+            <div class="code">
+              | int_number = 15<br>
+              | string = 32<br>
+              | my_sum = int_number + int(string)<br>
+              | print(my_sum)<br>
+            </div>
+            <div class="codeout">
+              | 47<br>
+            </div>
+            We don’t get any errors as we explicitly convert the string into integer before adding it to the
+            number.<br><br>
+          </div>
+          <div>
+            <h2>OPERATORS : </h2><br>
+            Earlier, we used python interactive shell to carry out calculations, such as 10 * 10. The
+            symbol we used between these two operands is called an operator.<br><br>
+            <div class="subtitle">Arithmetic Operator:</div>
+            Python divides operators in a few categories the ones you have used so far are all called
+            as Arithmetic Operators. Following charts shows the basic operators in Python.
+            <table style="width:100%">
+              <tr>
+                <th>Operator</th>
+                <th>Meaning</th>
+                <th>Example</th>
+                <th>Results</th>
+              </tr>
+              <tr>
+                <td>/</td>
+                <td>Division</td>
+                <td>4 / 2</td>
+                <td>2.0</td>
+              </tr>
+              <tr>
+                <td>*</td>
+                <td>Multiplication</td>
+                <td>4 * 2</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>+</td>
+                <td>Addition</td>
+                <td>4 + 2</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>Subtraction</td>
+                <td>4 - 2</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>//</td>
+                <td>Integer Division / Floored Quotient</td>
+                <td>4 // 2</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>%</td>
+                <td>Remainder / Modulus</td>
+                <td>4 % 2</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>**</td>
+                <td>Exponent</td>
+                <td>4 ** 2</td>
+                <td>16</td>
+              </tr>
+            </table><br><br>
+            <div class="code">
+              | 8 / 2<br>
+              | 8 ** 2<br>
+            </div>
+            <div class="codeout">
+              | 4.0<br>
+              | 512<br>
+            </div><br><br>
+            <div class="subtitle">Precedence of Operators:</div>
+            The order of operations is a set of rules used in mathematical calculations to evaluate an
+            expression.<br> Remember, <b>P</b>lease <b>E</b>xcuse <b>M</b>y <b>D</b>ear <b>A</b>unt <b>S</b>ally? It is an acronym to help you
+            remember the order of operations in math equations: parentheses, exponents, multiplication,
+            division, addition, and subtraction. The parenthese overlaps the exponent operator, which
+            overlaps multiplication and division, which overlaps addition and subtraction. If operators of
+            equal precedence are used then the associativity rule is used which evaluates the expression
+            from left to right.<br><br>
+            For Example:<br><br>
+            <div class="code">
+              | 16 / 4 * 8<br>
+            </div>
+            <div class="codeout">
+              | 32.0<br>
+            </div>
+            Here, the / and * operators have equal precedence. Hence, the expression is evaluated as 16
+            divided by 4 multiplied by 8. Thus, we get a result as 32.0.<br><br>
+            Now let's evaluate the same operation using parentheses<br><br>
+            <div class="code">
+              | 16 / ( 4 * 8 ) <br>
+            </div>
+            <div class="codeout">
+              | 0.5<br>
+            </div>
+            Using the parentheses, The expression inside the parentheses that is (4 * 8) gets evaluated first
+            and then the results get divided by 16.<br><br>
+            <div class="subtitle">Comparison Operators :</div><br>
+            Comparison operators are another category of operators in Python. Similar to arithmetic
+            operators, they are used in expressions with operands on either side. Unlike expressions with
+            arithmetic operators, expressions with comparison operators evaluate to either True or False.
+            Comparison Operators in python are:
+            <br><br>
+            <table style="width:100%">
+              <tr>
+                <th>Operator</th>
+                <th>Meaning</th>
+                <th>Example</th>
+                <th>Results</th>
+              </tr>
+              <tr>
+                <td>==</td>
+                <td>Equal to</td>
+                <td>10 == 10</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td>!= </td>
+                <td>Not Equal to</td>
+                <td>10 != 10 </td>
+                <td>False</td>
+              </tr>
+              <tr>
+                <td>&#62;</td>
+                <td>Greater than</td>
+                <td>15 > 20</td>
+                <td>False</td>
+              </tr>
+              <tr>
+                <td><</td>
+                <td>Smaller than</td>
+                <td>2 < 4</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td>>=</td>
+                <td>Greater than or equal to</td>
+                <td>23 >= 3</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td><=</td>
+                <td>Smaller than or equal to</td>
+                <td>23 <= 23</td>
+                <td>True</td>
+              </tr>
+            </table><br><br>
+            An expression with the ‘ <b>==</b> ’ operator returns True, if the operands on either side are equal.
+            Else it returns False.<br><br>
+            <div class="code">
+              | 53 == 53<br>
+            </div>
+            <div class="codeout">
+              | True<br>
+            </div><br><br>
+            An expression with the ‘ <b>!=</b> ’ operator returns True, if the operands on either side are not equal.
+            Else it returns False.<br><br>
+            <div class="code">
+              | 53 != 53<br>
+              | 53 != 3<br>
+            </div>
+            <div class="codeout">
+              | False<br>
+              | True<br>
+            </div><br><br>
+            An expression with the ‘ <b>></b> ’ operator returns True, if the operand on the left side is greater than
+            the operand on the right side.<br><br>
+            <div class="code">
+              | 25 > 6<br>
+              | 6 > 25<br>
+            </div>
+            <div class="codeout">
+              | True<br>
+              | False<br>
+            </div><br><br>
+            An expression with the ‘ <b><</b> ’ operator returns True, if the operand on the left side is smaller than
+            the operand on the right side.<br><br>
+            <div class="code">
+              | 12 < 5<br>
+              | 5 < 12<br>
+            </div>
+            <div class="codeout">
+              | False<br>
+              | True<br>
+            </div><br><br>
+            An expression with the ‘ <b>>=</b> ’ operator returns True, if the operand on the left side is greater
+            than and equal to the operand on the right side.<br><br>
+            <div class="code">
+              | 25 >= 6<br>
+              | 6 >= 25<br>
+              | 25 >= 25<br>
+            </div>
+            <div class="codeout">
+              | True<br>
+              | False<br>
+              | True<br>
+            </div><br><br>
+            An expression with the ‘ <b><=</b> ’ ’ operator returns True, if the operand on the left side is smaller
+            than and equal to the operand on the right side.<br><br>
+            <div class="code">
+              | 12 <= 5<br>
+              | 5 <= 12<br>
+              | 12 <= 12<br>
+            </div>
+            <div class="codeout">
+              | False<br>
+              | True<br>
+              | True<br>
+            </div><br><br>
+            <div class="subtitle">Logic Operators :</div><br>
+            Logical operators are another category of operators in Python. Like comparison
+            operators, logical operators also evaluate to True or False.<br><br>
+            <table style="width:100%">
+              <tr>
+                <th>Operator</th>
+                <th>Meaning</th>
+                <th>Expression</th>
+                <th>Results</th>
+              </tr>
+              <tr>
+                <td>and</td>
+                <td>And</td>
+                <td>True and True</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td>or </td>
+                <td>OR</td>
+                <td>True or False</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td>not</td>
+                <td>Inverter</td>
+                <td>not True</td>
+                <td>False</td>
+              </tr>
+            </table><br><br>
+            The python keyword ‘ <b>and</b> ’ returns True, if the expressions on either side are evaluated as
+            True.<br><br>
+            <div class="code">
+              | 1 == 1 and 'a' == 'a'<br>
+              | 3 == 2 and 'str' == 'str'<br>
+            </div>
+            <div class="codeout">
+              | True<br>
+              | False<br>
+            </div><br><br>
+            The keyword ‘<b> or</b> ’ returns True, if the either one of the two expressions are evaluated as
+            True.<br><br>
+            <div class="code">
+              | 1 == 1 or 'a' == 'a'<br>
+              | 3 == 2 or 'str' == 'str'<br>
+            </div>
+            <div class="codeout">
+              | True<br>
+              | True<br>
+            </div><br><br>
+            Placing ‘ <b>not</b> ’ in front of any expression changes the result of evaluated expression to its
+            opposite.
+            <br><br>
+            <div class="code">
+              | not 'a' == 'a'<br>
+              | 'str' == 'str'<br>
+            </div>
+            <div class="codeout">
+              | False<br>
+              | True<br>
+            </div><br><br>
+            <div class="subtitle">Assignment Operator :</div><br>
+            The assignment operation takes the value on the right and assigns it to the variable on the
+            left. The other operators are simple shorthands for the Arithmetic Operators.<br>
+            In the below table, Let's consider x = 2 common for all expressions.<br><br>
+            <table style="width:100%">
+              <tr>
+                <th>Operator</th>
+                <th>Meaning</th>
+                <th>Example</th>
+                <th>Value of x</th>
+              </tr>
+              <tr>
+                <td>=</td>
+                <td>Assignment Operator</td>
+                <td>x = 2</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>/=</td>
+                <td>Division and Assignment</td>
+                <td>x /= 2</td>
+                <td>1.0</td>
+              </tr>
+              <tr>
+                <td>*=</td>
+                <td>Multiplication and Assignment</td>
+                <td>x *= 2</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>+=</td>
+                <td>Addition and Assignment</td>
+                <td>x += 1</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>-=</td>
+                <td>Subtraction and Assignment</td>
+                <td>x -= 1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>//=</td>
+                <td>Integer Division and Assignment</td>
+                <td>x //= 2</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>%=</td>
+                <td>Modulus and Assignment </td>
+                <td>x %= 2</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>**=</td>
+                <td>Exponential and Assignment</td>
+                <td>x **= 2</td>
+                <td>4</td>
+              </tr>
+            </table><br><br>
+            
+          </div>
+
+              <a href="py00100.html" class="previous" >&laquo; Previous</a>
+              <a href="py00201.html" class="next" style="float: right;">Next &raquo</a> 
+
+        </div>
+
+          <iframe src="https://trinket.io/embed/python/8119fce88f" title="Python Terminal" noresize=yes>
+          </iframe>
+
+        </div>
+        
+      </div>
+      
+  </body>
+</html>
