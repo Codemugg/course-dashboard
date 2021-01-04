@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:src" content="assets/images/index-meta.png" />
+    <meta property="og:image" content="assets/images/index-meta.png" />
+    <meta
+      name="twitter:title"
+      content="Codemugg - Learning Without A Price Tag"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/codemugg-logo-white-1.png"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Codemugg is a non-profit organization that aims to provide free courses on programming being said that learning should never come with a price."
+    />
+    <title>Codemugg Course Template</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h2>Codemugg Inc</h2>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-address-book"></i>Contact</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-pencil-alt"></i>Courses</a>
+          </li>
+          <li>
+            <a id="donation" href="#"
+              ><i class="fas fa-donate"></i><b>Donate</b></a
+            >
+          </li>
+        </ul>
+        <br />
+        <hr />
+        <ul>
+          <li><a href="py00100.html">Chapter 1</a></li>
+          <li><a href="py00200.html">Chapter 2</a></li>
+          <li><a href="py00300.html">Chapter 3</a></li>
+          <li><a href="py00400.html">Chapter 4</a></li>
+          <li><a href="py00500.html">Chapter 5</a></li>
+          <li><a href="py00600.html">Chapter 6</a></li>
+          <li><a href="py00700.html">Chapter 7</a></li>
+          <li><a href="py00800.html">Chapter 8</a></li>
+        </ul>
+        <div>
+          <h5>Copyright 2021 - Codemugg Inc.<br />All Rights Reserved.</h5>
+        </div>
+        <div class="social_media">
+          <a href="https://facebook.com/codemugg" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/codemugg" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com/code.mugg" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://discord.gg/6YtH2j8cGe" target="_blank"
+            ><i class="fab fa-discord"></i
+          ></a>
+        </div>
+      </div>
+      <div class="main_content">
+        <div class="header">PYTHON COURSE FOR BEGINNERS.</div>
+        <div class="info">
+          <div>
+            <h2>OOP USING PYTHON :</h2><br /><br>
+            Object-oriented programming is the latest programming paradigm based on the concept of
+            "objects", which can contain attributes and it’s method: attributes in the form of fields, and
+            methods, in the form of procedures. A feature of objects is that an object's own procedures
+            can access and often modify the data fields of itself.<br><br>
+          </div>
+          <div>
+            <h2>Classes & Objects :</h2><br>
+            Classes and Objects are the fundamental concepts of Object-Oriented Programming.<br>
+            In Python, everything is an object!<br>
+            A variable (object) is just an instance of its type (class).<br>
+            That's why when you check the type of a variable you can see the class keyword right next to its
+            type (class).<br>
+            This code snippet shows that my_string is an object and it is an instance of the class str.<br><br>
+            <div class="code">
+                | my_string = 'I love coding.'<br>
+                | print(my_string)<br>
+                | print(type(my_string))<br>
+            </div>
+            <div class="codeout">
+                | 'I love coding.'<br>
+                | &#60; class 'str' &#62;
+            </div>
+            <div class="subtitle">Differentiate Class x Object</div><br>
+            The class gives you a standard way to create objects. A class is like a base project.
+            Say you are an engineer working for Boeing.<br>
+            Your new mission is to build the new product for the company, a new model called 747-Space.
+            This aircraft flies higher altitudes than other commercial models.<br>
+            Boeing needs to build dozens of those to sell to airlines all over the world, and the aircrafts have
+            to be all the same. To guarantee that the aircrafts (objects) follow the same standards, you need
+            to have a project (class) that can be replicable.<br>
+            The class is a project, a blueprint for an object. This way you make the project once, and reuse
+            it many times.<br>
+            In our code example before, consider that every string has the same behavior and the same
+            attributes. So it only makes sense for strings to have a class str to define them.<br>
+            <div class="subtitle">Attributes and Methods</div><br>
+            Objects have some behavior which is given by attributes and methods.<br>
+            In simple terms, in the context of an object, attributes are variables and methods are functions
+            attached to an object.<br>
+            For example, a string has many built-in methods that we can use.<br>
+            They work like functions, you just need to separate them from the objects using a -- In this code
+            snippet, I'm calling the <b>replace()</b> method from the string variable string which is an object,
+            and an instance of the class str. The replace() method replaces a part of the string for another
+            and returns a new string with the change. The original string remains the same.<br>
+            <div class="code">
+                |  string = 'This is a string.'<br>
+                |  print(string.replace('string', 'sentence'))<br>
+                |  print(string)<br>
+            </div>
+            <div class="codeout">
+                |  This is a sentence.<br>
+                |  This is a string.<br>
+            </div>
+            <div class="subtitle">Creating a Class: </div><br>
+            We have used many objects (instances of classes) like strings, integers, lists, and dictionaries.
+            All of them are instances of predefined classes in Python.<br>
+            To create our own classes we use the class keyword.<br>
+            By convention, the name of the class matches the name of the .py file and the module by
+            consequence. It is also a good practice to organize the code. Create a file vehicle.py with the
+            following class Vehicle.<br><br>
+            <div class="code">
+                |  # FileName = vechicle.py<br>
+                | class Vehicle:<br>
+                | &nbsp; def __init__(self, year, model, plate_number, current_speed = 0):<br>
+                | &nbsp; &nbsp; self.year = year<br>
+                | &nbsp; &nbsp; self.model = model<br>
+                | &nbsp; &nbsp; self.plate_number = plate_number<br>
+                | &nbsp; &nbsp; self.current_speed = current_speed<br>
+                |<br>
+                | &nbsp; def move(self):<br>
+                | &nbsp; &nbsp; self.current_speed += 1<br>
+                |<br>
+                | &nbsp; def accelerate(self, value):<br>
+                | &nbsp; &nbsp; self.current_speed += value<br>
+                | <br>
+                | &nbsp; def stop(self):<br>
+                | &nbsp; &nbsp; self.current_speed = 0<br>
+                |<br>
+                | &nbsp; def vechicledetails(self):<br>
+                | &nbsp; &nbsp; return self.model + ', ' + str(self.year) + ', ' + self.plate_number<br>
+            </div>
+            Let's break down the class to explain it in parts.<br>
+            The <b>class</b> keyword is used to specify the name of the class Vehicle.<br>
+            The <b>__init__</b> function is a built-in function that all classes have. It is called when an object is
+            created and is often used to initialize the attributes, assigning values to them, similar to what is
+            done to variables.<br>
+            The first parameter <b>self</b> in the __init__ function is a reference to the object (instance) itself.
+            We call it self by convention and it has to be the first parameter in every instance method, as
+            you can see in the other method definitions <b>def move(self)</b>, <b>def accelerate(self, value)</b>, 
+            <b>def stop(self)</b>, and <b>def vehicle_details(self)</b>.<br>
+            Vehicle has 5 attributes (including self): <b>year</b>,<b> model</b>, <b>plate_number</b>, and
+            <b>current_speed</b>.<br>
+            Inside the __init__, each one of them is initialized with the parameters given when the object
+            is instantiated.<br>
+            Notice that <b>current_speed</b> is initialized with 0 by default, meaning that if no value is given,
+            current_speed will be equal to 0 when the object is first instantiated.<br>
+            Finally, we have three methods to manipulate our vehicle regarding its speed: def
+            move(self), def accelerate(self, value), and def stop(self). And one method
+            to give back information about the vehicle: def vehicle_details(self).<br>
+            The implementation inside the methods work the same way as in functions. You can also have a
+            return to give you back some value at the end of the method as demonstrated by <b>def vehicle_details(self).</b><br>
+            <div class="subtitle">Using the Class: </div><br><br>
+            To use the class in your terminal, import the Vehicle class from the vehicle module.<br>
+            Create an instance called my_car, initializing year with 2009, model with 'F8', plate_number
+            with 'ABC1234', and current_speed with 100.<br>
+            The self parameter is not taken into consideration when calling methods. The Python interpreter
+            infers its value as being the current object/instance automatically, so we just have to pass the
+            other arguments when instantiating and calling methods.<br>
+            Now use the methods to <b>move()</b> the car which increases its current_speed by 1,
+            <b>accelerate(10)</b> which increases its current_speed by the value given in the argument, and
+            <b>stop()</b> which sets the current_speed to 0.<br>
+            Remember to print the value of current_speed at every command to see the changes.<br>
+            To finish the test, call <b>vehicle_details()</b> to print the information about our vehicle.<br><br>
+            <div class="code">
+                | # Filename = main.py<br>
+                | from vechicle import Vechicle<br>
+                | my_car = Vechicle(2009, 'F8', 'ABC1234', 100)<br>
+                | print(my_car.current_speed)<br>
+            </div>
+            <div class="codeout">
+                | 100<br>
+            </div><br>
+            <div class="code">
+                | # Filename = main.py<br>
+                | from vechicle import Vechicle<br>
+                | my_car = Vechicle(2009, 'F8', 'ABC1234', 100)<br>
+                | print(my_car.current_speed)<br>
+                | my_car.move()
+                | print(my_car.current_speed)
+            </div>
+            <div class="codeout">
+                | 100<br>
+                | 101
+            </div><br>
+            <div class="code">
+                | my_car.accelerate(10)<br>
+                | print(my_car.current_speed)<br>
+            </div>
+            <div class="codeout">
+                | 111<br>
+            </div>
+            <div class="code">
+                | my_car.stop()<br>
+                | print(my_car.current_speed)<br>
+            </div>
+            <div class="codeout">
+                | 0<br>
+            </div>
+            <div class="code">
+                | print(my_car.vehicle_details())<br>
+            </div>
+            <div class="codeout">
+                | F8, 2009, ABC1234<br>
+            </div>
+            If we don't set the initial value for <b>current_speed</b>, it will be zero by
+            default as stated before and demonstrated in the next example.
+            <div class="code">
+                | from vehicle import Vehicle<br>
+                | my_car = Vehicle(2009, 'F8', 'ABC1234')<br>
+                | print(my_car.current_speed)<br>
+            </div>
+            <div class="codeout">
+                | 0<br>
+            </div>
+            <div class="code">
+                | my_car.move()<br>
+                | print(my_car.current_speed)<br>
+            </div>
+            <div class="codeout">
+                | 1<br>
+            </div>
+            <div class="code">
+                | my_car.accelerate(10)<br>
+                | print(my_car.current_speed)<br>
+            </div>
+            <div class="codeout">
+                | 11<br>
+            </div>
+            <div class="code">
+                | print(my_car.vehicle_details())<br>
+            </div>
+            <div class="codeout">
+                | F8, 2009, ABC1234<br>
+            </div>
+
+          <div>
+            <h2>INHERITANCE : </h2><br>
+            Let's define a generic Vehicle class and save it inside the <b>vehicle.py</b> file.<br><br>
+            <div class="code">
+                |  # FileName = vechicle.py<br>
+                | class Vehicle:<br>
+                | &nbsp; def __init__(self, year, model, plate_number, current_speed = 0):<br>
+                | &nbsp; &nbsp; self.year = year<br>
+                | &nbsp; &nbsp; self.model = model<br>
+                | &nbsp; &nbsp; self.plate_number = plate_number<br>
+                | &nbsp; &nbsp; self.current_speed = current_speed<br>
+                |<br>
+                | &nbsp; def move(self):<br>
+                | &nbsp; &nbsp; self.current_speed += 1<br>
+                |<br>
+                | &nbsp; def accelerate(self, value):<br>
+                | &nbsp; &nbsp; self.current_speed += value<br>
+                | <br>
+                | &nbsp; def stop(self):<br>
+                | &nbsp; &nbsp; self.current_speed = 0<br>
+                |<br>
+                | &nbsp; def vechicledetails(self):<br>
+                | &nbsp; &nbsp; return self.model + ', ' + str(self.year) + ', ' + self.plate_number<br>
+            </div>
+            A vehicle has attributes <b>year</b>,<b> model</b>, <b>plate_number</b>, and <b>current_speed</b>.<br>
+            The definition of vehicle in the Vehicle is very generic and might
+            not be suitable for trucks, for instance, because it should include
+            a cargo attribute.<br>
+            On the other hand, a cargo attribute does not make much sense
+            for small vehicles like motorcycles.<br>
+            To solve this we can use <i>inheritance</i>.<br>
+            When a class (child) inherits another class (parent), all the
+            attributes and methods from the parent class are inherited by the
+            child class.<br><br>
+            <div class="subtitle">Parent and Child</div><br>
+            In our case, we want a new <b>Truck</b> class to inherit everything from
+            the <b>Vehicle</b> class. Then we want it to add its own specific
+            attribute <b>current_cargo</b> to control the addition and removal of
+            cargo from the truck.<br>
+            The Truck class is called a <i>child</i> class that inherits from its parent
+            class <i>Vehicle</i>.<br>
+            A parent class is also called a <i>superclass</i> while a child class is also
+            known as a <i>subclass</i>.<br>
+            Create the class Truck and save it inside the <i>truck.py</i> file.<br><br>
+            <div class="code">
+                | from vehicle import Vehicle<br>
+                | class Truck(Vehicle):<br>
+                | &nbsp; def __init__(self, year, model, plate_number,current_speed, current_cargo):<br>
+                | &nbsp; &nbsp; super().__init__(year, model, plate_number, current_speed)<br>
+                | &nbsp; &nbsp; self.current_cargo = current_cargo<br>
+                | <br>
+                | &nbsp; def add_cargo(self, cargo):<br>
+                | &nbsp; &nbsp; self.current_cargo += cargo<br>
+                |<br>
+                | &nbsp; def remove_cargo(self, cargo):<br>
+                | &nbsp; &nbsp; self.current_cargo -= cargo  <br>              
+            </div>
+            Let's break down the class to explain it in parts.<br> 
+            The class Vehicle inside the parentheses when defining the class
+            Truck indicates that the parent <b>Vehicle</b> is being inherited by its
+            child <b>Truck</b>Truck.<br> 
+            The __init__ method has self as its first parameter, as usual.<br> 
+            The parameters <b>year</b>,<b> model</b>, <b>plate_number</b>, and <b>current_speed</b> are
+            there to match the ones in the Vehicle class.<br>
+            We added a new parameter <b>current_cargo</b> suited for the Truck.<br>
+            In the first line of the __init__ method of the <b>Truck</b> class we have
+            to call the<b> __init__</b>  method of the <b>Vehicle</b> class.<br>
+            class.<br>
+            To do that we use super() to make a reference to the supperclass
+            Vehicle, so when <b>super().__init__(year, model, plate_number,
+            current_speed)</b> is called we avoid repetition of our code.<br>
+            After that, we can assign the value of current_cargo normally.<br>
+            Finally, we have two methods to deal with the <b>current_cargo: def
+            add_cargo(self, cargo):</b>, and <b>def remove_cargo(self, cargo):</b>.<br>
+            Remember that Truck inherits attributes and methods from
+            Vehicle, so we also have an implicit access to the methods that
+            manipulate the speed: <b>def move(self)</b>, <b>def accelerate(self,
+            value)</b>, and <b>def stop(self)</b>.
+            <div class="subtitle">Using Truck Class: </div><br>
+            To use the class in your terminal, import the Truck class from the
+            truck module.<br>
+            Create an instance called <b>my_truck</b>, initializing <b>year</b> with 2015,
+        <b>model</b> with 'V8', <b>plate_number</b> with 'XYZ1234', <b>current_speed</b> with
+            0, and </b>current_cargo</b> with 0.<br>
+            Use <b>add_cargo(10)</b> to increase <b>current_cargo</b>b> by 10,<br>
+            <b>remove_cargo(4)</b>, to decrease current_cargo by 4.<br>
+            Remember to print the value of current_cargo at every command
+            to see the changes.<br>
+            By inheritance, we can use the methods from the Vehicle class to
+            move() the truck which increases its <b>current_speed</b> by 1,
+        <b>accelerate(10)</b> which increases its current_speed by the value
+            given in the argument, and <b>stop()</b> which sets the current_speed
+            to 0.<br>
+            Remember to print the value of <b>current_speed</b> at every
+            interaction to see the changes.<br>
+            To finish the test, call <b>vehicle_details()</b> inherited from the
+            Vehicle class to print the information about our truck.<br><br>
+            <div class="code">
+                | from truck import Truck<br>
+                | my_truck = Truck(2015, 'V8', 'XYZ1234', 0, 0)<br>
+                | print(my_truck.current_cargo)<br>
+            </div>
+            <div class="codeout">
+                | 0
+            </div>
+            <div class="code">
+                | my_truck.add_cargo(10)<br>
+                | print(my_truck.current_cargo)<br>
+            </div>
+            <div class="codeout">
+                | 10
+            </div>
+            <div class="code">
+                | my_truck.remove_cargo(4)<br>
+                | print(my_truck.current_cargo)<br>
+            </div>
+            <div class="codeout">
+                | 6
+            </div>
+            <div class="code">
+                | print(my_truck.current_speed)<br>
+            </div>
+            <div class="codeout">
+                | 0
+            </div>
+            <div class="code">
+                |  my_truck.accelerate(10)<br>
+                |  print(my_truck.current_speed)<br>
+            </div>
+            <div class="codeout">
+                | 10
+            </div>
+            <div class="code">
+                |   my_truck.stop()<br>
+                |  print(my_truck.current_speed)<br>
+            </div>
+            <div class="codeout">
+                | 0
+            </div>
+            <div class="code">
+                |  print(my_truck.vehicle_details())
+                <br>
+            </div>
+            <div class="codeout">
+                | V8, 2015, XYZ1234
+            </div>
+          </div>
+            <a href="py00400.html" class="previous" >&laquo; Previous</a>
+            <a href="py00600.html" class="next" style="float: right;">Next &raquo</a>
+          </div>
+          
+        </div>
+        <iframe src="https://trinket.io/embed/python/8119fce88f" title="Python Terminal" noresize=yes>
+        </iframe>
+      </div>
+    </div>
+  </body>
+</html>

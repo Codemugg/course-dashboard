@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:src" content="assets/images/index-meta.png" />
+    <meta property="og:image" content="assets/images/index-meta.png" />
+    <meta
+      name="twitter:title"
+      content="Codemugg - Learning Without A Price Tag"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/codemugg-logo-white-1.png"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Codemugg is a non-profit organization that aims to provide free courses on programming being said that learning should never come with a price."
+    />
+    <title>Codemugg Course Template</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h2>Codemugg Inc</h2>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-address-book"></i>Contact</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-pencil-alt"></i>Courses</a>
+          </li>
+          <li>
+            <a id="donation" href="#"
+              ><i class="fas fa-donate"></i><b>Donate</b></a
+            >
+          </li>
+        </ul>
+        <br />
+        <hr />
+        <ul>
+          <li><a href="py00100.html">Chapter 1</a></li>
+          <li><a href="py00200.html">Chapter 2</a></li>
+          <li><a href="py00300.html">Chapter 3</a></li>
+          <li><a href="py00400.html">Chapter 4</a></li>
+          <li><a href="py00500.html">Chapter 5</a></li>
+          <li><a href="py00600.html">Chapter 6</a></li>
+          <li><a href="py00700.html">Chapter 7</a></li>
+          <li><a href="py00800.html">Chapter 8</a></li>
+        </ul>
+        <div>
+          <h5>Copyright 2021 - Codemugg Inc.<br />All Rights Reserved.</h5>
+        </div>
+        <div class="social_media">
+          <a href="https://facebook.com/codemugg" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/codemugg" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com/code.mugg" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://discord.gg/6YtH2j8cGe" target="_blank"
+            ><i class="fab fa-discord"></i
+          ></a>
+        </div>
+      </div>
+      <div class="main_content">
+        <div class="header">PYTHON COURSE FOR BEGINNERS.</div>
+        <div class="info">
+          <div>
+            <h2>FILE HANDLING:</h2><br />
+            Creating, deleting, reading, and many other functions applied to files are an integral part of
+            many programs.<br>
+            As such, it is very important to know how to organize and deal with files directly from your
+            code.<br>
+            Let's see how to handle files in Python.<br><br>
+          </div>
+          <div>
+            <h2>OPENING FILES:</h2><br>
+          First things first, create!<br>
+          We are going to use the <b>open()</b> function.<br>
+          This function opens a file and returns its corresponding object.<br>
+          The first argument is the name of the file we are handling, the second refers to the operation we
+          are using.<br>
+          The code below creates the file "people.txt", the ‘x’ argument is used when we just want to
+          create the file. If a file with the same name already exists, it will throw an exception.<br><br>
+          <div class="code">
+
+            | record = open("people.txt","x")<br>
+        </div>
+        You can also use the ‘<b>w</b>’ mode to create a file. Unlike the x mode, it will not throw an exception
+        since this mode indicates the writing mode. We are opening a file to write data into it and, if the
+        file doesn't exist, it is created.<br><br>
+        <div class="code">
+            | record = open("people.txt","w")<br>
+        </div>
+        The last one is the ‘a’ mode which stands for append. As the name implies, you can append
+        more data to the file, while the w mode simply overwrites any existing data.<br>
+        When appending, if the file doesn't exist, it also creates it.<br><br>
+        <div class="code">
+            | record = open("people.txt","a")<br>
+        </div>
+          </div>
+          <div>
+            <h2>WRITING INTO A FILE: </h2><br>
+            To write data into a file, you simply open a file with the ‘w’ mode.<br>
+            Then, to add data, you use the object return by the open() function. In this case, the object is
+            called people_file. Then you call the write() function passing the data as an argument.<br>
+            <div class="code">
+                | record = open("people.txt","w")<br>
+                | record.write('Sam\n')<br>
+                | record.write('Tim\n')<br>
+                | record.write('Sarah\n')<br>
+                | record.close()<br>
+            </div>
+            We use \n at the end to break the line, otherwise the content in the file will stay in the same line
+            as "<b>SamTimSarah</b>".<br><br>
+            One more detail is to <b>close()</b> the file.<br><br>
+            This is not only a good practice, but also ensures that your changes were applied to the file.<br>
+            <b>Note:</b> Using w mode, the data that already existed in the file will be overwritten by the new
+            data.<br><br>
+            To add new data without losing what was already there, we have to use the append mode.<br>
+            <div class="subtitle">File append: </div><br>
+            The ‘a’ mode appends new data to the file, keeping the existing one.<br>
+            In this example, after the first writing with w mode, we are using the ‘<b>a</b>’ mode to append.
+            The result is that each name will appear twice in the file "people.txt".<br><br>
+            <div class="code">
+                | record = open("people.txt","w")<br>
+                | <br>
+                | record.write('Sam\n')<br>
+                | record.write('Tim\n')<br>
+                | record.write('Sarah\n')<br>
+                | record.close()<br>
+                | <br>
+                | # Adding some data<br>
+                | <br>
+                | record = open("people.txt","a")<br>
+                | <br>
+                | record.write('John\n')<br>
+                | record.write('Sia\n')<br>
+                | record.close()<br>
+            </div>
+          </div>
+          <div>
+            <h2>READING FROM A FILE:</h2><br>
+            Reading the file is also very straightforward: just use the ‘<b>r</b>’ mode like so.<br>
+            If you read the "people.txt"file created in the last example, you should see 6 names in your
+            output.<br><br>
+            <div class="code">
+                | record = open("people.txt","r")<br>
+                | <br>
+                | print(record.read())<br>
+                | <br>
+                | record.close()<br>
+                | <br>
+            </div>
+            <div class="codeout">
+                | Sam<br>
+                | Tim<br>
+                | Sarah<br>
+                | John<br>
+                | Sia<br>
+            </div>
+            The <b>read()</b> function reads the whole file at once.
+            If you use the <b>readline()</b> function, you can read the file line by line.
+            <div class="code">
+                | record = open("people.txt","r")<br>
+                | <br>
+                | print(record.readline())<br>
+                | print(record.readline())<br>
+                | print(record.readline())<br>
+                | <br>
+                | record.close()<br>
+                | <br>
+            </div>
+            <div class="codeout">
+                | Sam<br>
+                | <br>
+                | Tim<br>
+                | <br>
+                | Sarah<br>
+                | <br>
+            </div>
+          </div>
+          
+          <div>
+            <h2>OTHER FILE HANDLING FUNCTIONS.</h2><br>
+            <div class="subtitle">
+                Deleting a file: 
+            </div>
+            To delete a file, you also need the <b>os</b> module.
+            Use the <b>remove()</b> method.<br><br>
+            <div class="code">
+                | <br>
+                | <br>
+                | import os<br>
+                | <br>
+                | os.remove(('people.txt'))<br>
+                | <br>
+                | <br>
+            </div>
+            Check whether a file exists or not.<br>
+            The os.path.exists() method is used to check the existence of a file.<br><br>
+            <div class="code">
+                | <br>
+                | <br>
+                | import os<br>
+                | <br>
+                | if os.path.exists('my_file.txt'):<br>
+                | &nbsp; os.remove(('people.txt'))<br>
+                | <br>
+                | else:<br>
+                | &nbsp; print("File not found.")<br>
+                | <br>
+            </div>
+            <div class="subtitle">
+                Copying a file: 
+            </div>
+            For Copying a file, you can use the <b>copyfile()</b> method from the <b>shutil</b> module.<br><br>
+            <div class="code">
+                | <br>
+                | from shutil import copyfile<br>
+                | <br>
+                | copyfile('text_file.txt','Copy_text.txt')<br>
+                | <br>
+                | <br>
+            </div>
+            <div class="subtitle">
+                Rename and Move a File: 
+            </div>
+            If you need to move or rename a file you can use the <b>move()</b> method from the shutil module<br><br>
+            <div class="code">
+                | <br>
+                | from shutil import move<br>
+                | <br>
+                | move('text_file.txt','other_text.txt')<br>
+                | <br>
+                | <br>
+            </div><br>
+            <b>Great..! Now, you know how to handle files using python.</b><br><br>
+          </div>
+            <a href="py00600.html" class="previous" >&laquo; Previous</a>
+            <a href="py00800.html" class="next" style="float: right;" >Next &raquo</a>
+          </div>
+          <iframe src="https://trinket.io/embed/python/8119fce88f" title="Python Terminal" noresize=yes>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

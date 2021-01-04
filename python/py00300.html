@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:src" content="assets/images/index-meta.png" />
+    <meta property="og:image" content="assets/images/index-meta.png" />
+    <meta
+      name="twitter:title"
+      content="Codemugg - Learning Without A Price Tag"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/codemugg-logo-white-1.png"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Codemugg is a non-profit organization that aims to provide free courses on programming being said that learning should never come with a price."
+    />
+    <title>Codemugg Course Template</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    
+    <script>
+        function resizeIframe(obj) {
+          obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+        }
+      </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h2>Codemugg Inc</h2>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-address-book"></i>Contact</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-pencil-alt"></i>Courses</a>
+          </li>
+          <li>
+            <a id="donation" href="#"
+              ><i class="fas fa-donate"></i><b>Donate</b></a
+            >
+          </li>
+        </ul>
+        <br />
+        <hr />
+        <ul>
+          <li><a href="py00100.html">Chapter 1</a></li>
+          <li><a href="py00200.html">Chapter 2</a></li>
+          <li><a href="py00300.html">Chapter 3</a></li>
+          <li><a href="py00400.html">Chapter 4</a></li>
+          <li><a href="py00500.html">Chapter 5</a></li>
+          <li><a href="py00600.html">Chapter 6</a></li>
+          <li><a href="py00700.html">Chapter 7</a></li>
+          <li><a href="py00800.html">Chapter 8</a></li>
+        </ul>
+        <div>
+          <h5>Copyright 2021 - Codemugg Inc.<br />All Rights Reserved.</h5>
+        </div>
+        <div class="social_media">
+          <a href="https://facebook.com/codemugg" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/codemugg" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com/code.mugg" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://discord.gg/6YtH2j8cGe" target="_blank"
+            ><i class="fab fa-discord"></i
+          ></a>
+        </div>
+      </div>
+      <div class="main_content">
+        <div class="header">PYTHON COURSE FOR BEGINNERS.</div>
+        <div class="info">
+          <div>
+            <h2>PYTHON DATA TYPES AND THEIR METHODS:</h2><br />
+            You have already learnt about the basics of all data types in python.<br><br>
+            Now, You’ll study all of them in detail along with the methods associated with them.<br><br>
+            Integer, Float and Complex are the simplest data types, they are not associated with any
+            methods.<br><br>
+            So, let's move on to Strings.<br><br>
+          <div>
+            <h2>STRINGS : </h2><br>
+            As mentioned before, Strings are collections of different characters.<br>
+            There are many String manipulation techniques, Let's study those techniques in detail.<br><br>
+            <div class="subtitle">String Concatenation :</div>
+            Concatenation is when you have two or more strings and you want to join them into one.
+            You can use the ‘<b>+</b>’ operator to do so.
+            <br><br>
+            <div class='code'>
+                | string1 = 'Happy'<br>
+                | string2 = 'Coding'<br>
+                | res_string = string1 + string2<br>
+                | print(res_string)<br>
+              </div>
+              <div class='codeout'>
+                | Happy Coding
+              </div>
+              The above code, adds both the string using a space and stroes the newly created string in the
+              final_string, which then gets printed on the console.<br><br>
+              The string type has many built-in methods that let us manipulate them.<br>
+              You will study how some of these methods work.<br><br>
+            <div class="subtitle">Len(): </div><br>
+            The <b>len()</b> function returns the length of a string.<br>
+                <div class="code">
+                    |  string = 'This is a string.'<br>
+                    |  print(len(string))<br>
+                </div>
+                <div class="codeout">
+                    |  17<br>
+                </div>
+                The length of the string “This is a string.” is 17. Hence, the output of code is 17.<br><br>
+              <div class="subtitle"> replace() :</div><br>
+              The <b>replace()</b> method replaces a part of the string with another.<br> For example, let's replace
+              'string' for 'sentence'.<br><br>
+              <div class="code">
+                |  string = 'This is a string.'<br>
+                |  print(string.replace('string', 'sentence'))<br>
+            </div>
+            <div class="codeout">
+                |  This is a sentence.<br>
+            </div>
+            After replacing, the output is ‘This is a sentence’.
+              <br><br>
+              <div class="subtitle">upper() : </div><br>
+              The <b>upper()</b> method converts all the characters of a string to Uppercase.<br><br>
+              <div class="code">
+                |  string = 'Happy Coding!'<br>
+                |  print(string.upper())<br>
+            </div>
+            <div class="codeout">
+                |  HAPPY CODING!<br>
+            </div>
+            The upper() method turns the case of string: ‘Happy Coding!’ to Uppercase: ‘HAPPY
+            CODING!’
+              <br><br>
+              <div class="subtitle">lower() : </div><br>
+              Unlike the upper() method, the <b>lower()</b> method converts all the characters of a string to Lowercase.<br><br>
+            For example,<br>
+            <div class="code">
+                |  string = 'Happy Coding!'<br>
+                |  print(string.lower())<br>
+            </div>
+            <div class="codeout">
+                |  happy coding!<br>
+            </div>
+            The lower() method turns the case of string: ‘Happy Coding !’ to Lowercase: ‘happy coding !’
+            <br><br>
+          <div>
+            <h2>TUPLES: </h2><br>
+            A tuple is similar to a list: it's ordered, and allows repetition of items.<br>
+            There is just one difference: a tuple is immutable.<br>
+            Immutability, if you remember, means you can't change a tuple after its creation.<br>
+            If you try to add an item or update one, for instance, the Python interpreter will show you an
+            error.
+            <br><br>
+            <div class="subtitle">Initializing a tuple: </div><br>
+            Following is an example of empty tuple:<br><br>
+            <div class="code">
+                  | Scores = () <br>
+            </div>
+            Following is an example of tuples with initial values:<br><br>
+            <div class="code">
+                  | Scores = (90.0,93.0,85.33) <br>
+                  | print(Scores) <br>
+            </div>
+          <div class="codeout">
+            | (90.0, 93.0, 85.33)<br>
+            </div>
+            <div class="subtitle">Adding an element in a Tuple: </div><br>
+            As tuples are not mutable. You’ll get an error if you try adding a value in a tuple.<br><br>
+            <div class="code">
+                | Scores = (90.0,93.0,85.33) <br>
+                | Scores.add(55.3)<br>
+                | print(Scores) <br>
+          </div>
+         <div class="codeout">
+          | Traceback (most recent call last):<br>
+          | File "c:\Users\owner\CodeMuggCourse\course-dashboard-main\python\py.py", line 2, in module<br>
+          |  tup.add(45)<br>
+          | AttributeError: 'tuple' object has no attribute 'add'<br><br>
+          </div>
+          <div class="subtitle">Updating an element in a Tuple : </div><br>
+          Updating an item will also return an error.<br>
+          But there is a trick: you can convert into a list, change the item, and then convert it back to a
+          tuple.
+          <br><br>
+            <div class="code">
+                | Scores = (90.0,93.0,85.33) <br>
+                | Marks = list(Scores)<br>
+                | Marks[1] = 89.00<br>
+                | Result = tuple(Marks)<br>
+                | print(Result) <br>
+          </div>
+         <div class="codeout">
+          | (90.0, 89.0, 85.33) <br>
+          </div>
+          <div class="subtitle">Deleting an element from a Tuple : </div><br>
+          For the same reason you can't add an item, you also can't delete an item, since they are immutable. <br><br>
+          </div>
+          <div class="subtitle">Retrieving from a Tuple : </div><br>
+          You can use the index to reference the item. <br><br>
+          <div class="code">
+            | Scores = (90.0,93.0,85.33) <br>
+            | print(Scores)<br>
+            | print(Scores[2])<br>
+          </div>
+            <div class="codeout">
+                | (90.0, 89.0, 85.33) <br>
+                | 85.33 <br>
+            </div><br>
+            Let’s implement a program to check whether a particular element is present in a tuple or not:
+            <div class="code">
+                | Subjects = ('Mathematics','Language','Physics')<br>
+                | if 'Mathematics' in Subjects:<br>
+                | &nbsp; print("Mathematics is present in Subjects.")<br>
+                | else:<br>
+                | &nbsp; print("Mathematics is not present in Subjects.")<br>
+              </div>
+                <div class="codeout">
+                    | Mathematics is present in Subjects.<br>
+                </div>
+                As the mathematics is in the tuple, we get the output as ‘<b>Mathematics is present in Subjects.</b>’
+          </div><br>
+          Now, let's move on to lists.
+        <br><br>
+        <div>
+            <h2>LISTS: </h2><br>
+            A list has its items ordered and you can add the same item as many times as you want.
+            An important detail is that lists are mutable. Mutability means you can change a list after its
+            creation by adding items, removing them, or even just changing their values.<br><br>
+            <div class="subtitle">Initializing a List: </div><br>
+            Empty List: <br><br>
+            <div class="code">
+                  | Scores = [] <br>
+            </div>
+            List with initial values:<br><br>
+            <div class="code">
+                  | Scores = [90.0, 93.0, 85.33] <br>
+                  | print(Scores) <br>
+            </div>
+          <div class="codeout">
+            | [90.0, 93.0, 85.33]<br>
+            </div>
+            <div class="subtitle">Adding an element in a List :: </div><br>
+            To add an item at the end of a list, you can use <b>append()</b> method.<br><br>
+            <div class="code">
+                | Books = ['Mathematics', 'Language', 'Physics'] <br>
+                | Books.append('Python')<br>
+                | print(Books) <br>
+          </div>
+         <div class="codeout">
+          | ['Mathematics', 'Language', 'Physics', 'Python']<br>
+          </div><br><br>
+          To add an item at a specific position in a list, you can use <b>insert()</b> method.
+          <div class="code">
+            | Books = ['Mathematics', 'Language', 'Physics'] <br>
+            | Books.insert(1, 'Python')<br>
+            | print(Books) <br>
+            </div>
+            <div class="codeout">
+                | ['Mathematics', 'Python', 'Language', 'Physics']<br>
+            </div><br><br>
+            In the above code, the first argument is an integer which represents the index of the element that
+            is to be added into the list.
+          <div class="subtitle">Updating in a List :</div><br>
+          To update a list you just have to specify the position of the item to update and set the new value
+          <br><br>
+          <div class="code">
+            | Books = ['Mathematics', 'Language', 'Physics'] <br>
+            | Books[1]='Python'<br>
+            | print(Books) <br>
+            </div>
+            <div class="codeout">
+                | ['Mathematics', 'Python', 'Physics']<br>
+            </div><br><br>
+          <div class="subtitle">Deleting from a List :</div><br>
+          You can use the <b>remove()</b> method to delete the item given as an argument. <br><br>
+          <div class="code">
+            | Books = ['Mathematics', 'Language', 'Physics'] <br>
+            | Books.remove('Language')<br>
+            | print(Books) <br>
+            </div>
+            <div class="codeout">
+                | ['Mathematics', 'Physics']
+            </div><br>
+            You can use the clear() method to remove all the elements from a list.
+            <div class="code">
+                | Books = ['Mathematics', 'Language', 'Physics'] <br>
+                | Books.clear()<br>
+                | print(Books) <br>
+                </div>
+                <div class="codeout">
+                    | []<br>
+                </div><br><br>
+          </div>
+          <div class="subtitle">Retrieving from a List : </div><br>
+          You can use the index to reference the item.<br>
+            Remember that the index starts at 0.<br>
+            So to access the second item use the index 1.<br>
+            <br><br>
+          <div class="code">
+            | Books = ['Mathematics', 'Language', 'Physics'] <br>
+            | print(Books[2])<br>
+          </div>
+            <div class="codeout">
+                | Physics <br>
+            </div><br>
+            Let’s implement a program to check whether a particular element is present in a list or not:
+            <div class="code">
+                | books = ['Mathematics','Language','Physics']<br>
+                | if 'Mathematics' in books:<br>
+                | &nbsp; print("Mathematics is present in Subjects.")<br>
+                | else:<br>
+                | &nbsp; print("Mathematics is not present in Subjects.")<br>
+              </div>
+                <div class="codeout">
+                    | Mathematics is present in Subjects.<br>
+                </div>
+                As the mathematics is in the list, we get the output as ‘<b>Mathematics is present in Subjects.</b>’
+          </div>
+          <div>
+            <h2>SETS: </h2><br>
+            Sets don't guarantee the order of items and are not indexed.<br>
+            A key point when using sets: they don't allow repetition of an item.<br><br>
+            <div class="subtitle">Initializing a SET: </div><br>
+            Empty Set: <br><br>
+            <div class="code">
+                  | Scores = set()<br>
+            </div>
+            Set with initial values:<br><br>
+            <div class="code">
+                  | Names = {'Tim','Nick'} <br>
+                  | print(Names) <br>
+            </div>
+          <div class="codeout">
+            | {'Tim', 'Nick'}<br>
+            </div>
+            <div class="subtitle">Adding in a Set :</div><br>
+            You can use the <b>add()</b> method to add one item to the set.<br><br>
+            <div class="code">
+                | Names = {'Tim','Nick'} <br>
+                | Names.add('Sarah')<br>
+                | print(Names) <br>
+          </div>
+         <div class="codeout">
+          | {'Tim', 'Nick', 'Sarah'}<br>
+          </div><br><br>
+          You can also use the <b>update()</b> method to add multiple items at once.
+          <div class="code">
+            | Names = {'Tim','Nick'} <br>
+            | Names.update(['Sarah', 'John'])<br>
+            | print(Names) <br>
+            </div>
+            <div class="codeout">
+                | {'Tim', 'Nick', 'Sarah', 'John'}
+            </div><br><br>
+            Sets do not allow repetition, so if you try to add 'Tim' again, nothing changes.
+            <div class="code">
+                | Names = {'Tim','Nick'} <br>
+                | Names.add('Tim')<br>
+                | print(Names) <br>
+                </div>
+                <div class="codeout">
+                    | {'Tim', 'Nick'}<br>
+                </div><br><br>
+          <div class="subtitle">Updating in a Set :</div><br>
+          Items in a set are not mutable. You have to either add or delete an item.
+          <br><br>
+          
+          <div class="subtitle">Deleting from a Set :</div><br>
+          Similar to lists, You can delete an element in a set using <b>remove()</b> method.
+          <br><br>
+          <div class="code">
+            | Books = {'Mathematics', 'Language', 'Physics'}<br>
+            | Books.remove('Language')<br>
+            | print(Books) <br>
+            </div>
+            <div class="codeout">
+                | {'Mathematics', 'Physics'}<br>
+            </div><br>
+            And you can also use the clear() method to remove all the elements from a set.
+            <br><br>
+            Let’s implement a program to check whether a particular element is present in a list or not:
+            <div class="code">
+                | books = {'Mathematics','Language','Physics'}<br>
+                | if 'Mathematics' in books:<br>
+                | &nbsp; print("Mathematics is present in Subjects.")<br>
+                | else:<br>
+                | &nbsp; print("Mathematics is not present in Subjects.")<br>
+              </div>
+                <div class="codeout">
+                    | Mathematics is present in Subjects.<br>
+                </div>
+                As the mathematics is included in the set, we get the output as ‘<b>Mathematics is present in Subjects.</b>’
+          </div>
+          <div>
+            <h2>DICTIONARIES: </h2><br>
+            The dictionary doesn't guarantee the order of the elements and it is mutable.<br>
+            One important characteristic of dictionaries is that you can set your customized access keys for
+            each element.
+            <br><br>
+            <div class="subtitle">Initializing a Dictionary: </div><br>
+            Empty Dictionary: <br><br>
+            <div class="code">
+                  | Phone_bk = {}<br>
+            </div>
+            Dictionary with initial values:<br><br>
+            <div class="code">
+                  | Phone_bk = {'Sam':'98653*****','Nick':'98**56**74'} <br>
+                  | print(Phone_bk) <br>
+            </div>
+          <div class="codeout">
+            | {'Sam':'98653*****', 'Nick':'98**56**74'}<br>
+            </div>
+            <div class="subtitle">Adding in a Dictionary :</div><br>
+            To add a value to a dictionary, you can use the following syntax:<br><br>
+            <div class="code">
+                | Phone_bk = {'Sam':'98653*****','Nick':'98**56**74'}<br>
+                | Phone_bk['Sarah'] = '**78**85**'
+                | print(Names) <br>
+          </div>
+         <div class="codeout">
+          | {'Sam':'98653*****','Nick':'98**56**74', 'Sarah': '**78**85**'}<br>
+          </div><br><br>
+          <div class="subtitle">Updating a Dictionary :</div><br>
+          To update the value of key, you just have to use the above syntax which we used to add a value.<br>
+          The only difference is, the key_value, should already be present in the dictionary. <br>         
+          <div class="code">
+            | Phone_bk = {'Sam':'98653*****','Nick':'98**56**74', 'Sarah': '**78**85**'}<br>
+            | Phone_bk['Sarah'] = '9178**85**'<br>
+            | print(Names) <br>
+            </div>
+            <div class="codeout">
+                | {'Sam':'98653*****','Nick':'98**56**74', 'Sarah': '9178**85**'}<br>
+            </div><br><br>
+          
+          <div class="subtitle">Deleting a record from a dictionary :</div><br>
+          Lets remove ‘Sam’ from the Phone_bk.
+          <br><br>
+          <div class="code">
+            | Phone_bk = {'Sam':'98653*****','Nick':'98**56**74'}<br>
+                | Phone_bk.pop('Sam')<br>
+                | print(Names) <br>
+            </div>
+            <div class="codeout">
+                | {'Nick':'98**56**74', 'Sarah': '9178**85**'}<br>
+            </div><br>
+            The above code removes Sam’s contact information from the phone_bk.<br>
+            And similar to lists and sets, we use the clear() method to remove all the records from a
+            dictionary.
+            <br><br>
+            <div class="subtitle">Accessing an element in a dictionary : </div><br>
+            A value in a dictionary can be accessed using its key name.
+          <br><br>
+          <div class="code">
+            | Phone_bk = {'Sam':'98653*****','Nick':'98**56**74'}<br>
+                | Record = Phone_bk['Sam']<br>
+                | print(Record) <br>
+            </div>
+            <div class="codeout">
+                | '98653*****'<br>
+            </div><br>
+            A program to check whether a key is present in a record or not.<br><br>
+            <div class="code">
+                | Phone_bk = {'Sam':'98653*****','Nick':'98**56**74'}<br>
+                | if 'Nick' in Phone_bk:<br>
+                | &nbsp; print("Nick's contact is available.")<br>
+                | else:<br>
+                | &nbsp; print("Nick's contact is not available.")<br>
+              </div>
+                <div class="codeout">
+                    | Nick's contact is available.<br>
+                </div>
+          </div>
+            <a href="py00201.html" class="previous">&laquo; Previous</a>
+            <a href="py00400.html" class="next" style="float: right;">Next &raquo</a> 
+          </div>
+          <iframe src="https://trinket.io/embed/python/8119fce88f" title="Python Terminal" noresize=yes>
+          </iframe>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>

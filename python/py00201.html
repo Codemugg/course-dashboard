@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:src" content="assets/images/index-meta.png" />
+    <meta property="og:image" content="assets/images/index-meta.png" />
+    <meta
+      name="twitter:title"
+      content="Codemugg - Learning Without A Price Tag"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/codemugg-logo-white-1.png"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Codemugg is a non-profit organization that aims to provide free courses on programming being said that learning should never come with a price."
+    />
+    <title>Codemugg Course Template</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    
+    <script>
+        function resizeIframe(obj) {
+          obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+        }
+      </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h2>Codemugg Inc</h2>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-address-book"></i>Contact</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-pencil-alt"></i>Courses</a>
+          </li>
+          <li>
+            <a id="donation" href="#"
+              ><i class="fas fa-donate"></i><b>Donate</b></a
+            >
+          </li>
+        </ul>
+        <br />
+        <hr />
+        <ul>
+          <li><a href="py00100.html">Chapter 1</a></li>
+          <li><a href="py00200.html">Chapter 2</a></li>
+          <li><a href="py00300.html">Chapter 3</a></li>
+          <li><a href="py00400.html">Chapter 4</a></li>
+          <li><a href="py00500.html">Chapter 5</a></li>
+          <li><a href="py00600.html">Chapter 6</a></li>
+          <li><a href="py00700.html">Chapter 7</a></li>
+          <li><a href="py00800.html">Chapter 8</a></li>
+        </ul>
+        <div>
+          <h5>Copyright 2021 - Codemugg Inc.<br />All Rights Reserved.</h5>
+        </div>
+        <div class="social_media">
+          <a href="https://facebook.com/codemugg" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/codemugg" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com/code.mugg" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://discord.gg/6YtH2j8cGe" target="_blank"
+            ><i class="fab fa-discord"></i
+          ></a>
+        </div>
+      </div>
+      <div class="main_content">
+        <div class="header">PYTHON COURSE FOR BEGINNERS.</div>
+        <div class="info">
+          <div>
+            <h2>INTRODUCTION TO PYTHON PROGRAMMING:</h2><br /></div>
+          <div>
+            <h2>CONDITIONAL STATEMENTS: </h2><br>
+            Conditionals are one of the cornerstones of any programming language. They allow you
+            to control the program flow according to specific conditions. A conditional Statement is like a
+            control structure: a block of code which makes decisions analyzing the values of variables.<br>
+            The keywords ‘<b>if</b>’, ‘ <b>else</b> ’ and ‘ <b>elif</b> ’ are used to implement conditional
+            statements in python. It allows the execution of a particular block of code conditionally.<br>
+            Following pseudocode displays the syntax of conditional statements:
+            <br><br>
+            <div class="code">
+                1.  | if ( CONDITION_IS_TRUE ): <br>
+                2.  |<br>
+                3.  |       &nbsp; Execute Following block of code<br>
+                4.  |       &nbsp; BLOCK 1<br>
+                5.  |<br>
+                6.  | else:<br>
+                7.  |<br>
+                8.  |       &nbsp; Execute Following block of code<br>
+                9.  |       &nbsp; BLOCK 2<br>
+            </div>
+            The above pseudocode explains that you can define two conditional statements simultaneously.
+            If the condition on line 2 turns out to be true, then the block of code written in BLOCK 1 is
+            executed, otherwise the control is passed on to the BLOCK 2.<br><br>
+            <div class="subtitle">if statement: </div><br>
+            The block of code written inside the if statement is only executed, if the condition at the
+            start is true.<br>
+            The general form of a if statement is:<br><br>
+            <div class="code">
+                1.  | if ( CONDITION_IS_TRUE ): <br>
+                2.  |<br>
+                3.  |       &nbsp; Execute Following block of code<br><br></div>
+            The condition contains some logic that returns a boolean, and the statement is executed only if
+            the return is True.<br><br>
+            You’ll understand the use of if statement using following example:<br><br>
+            <div class='code'>
+                | Cost_apples = 50.00<br>
+                | Cost_mangoes = 45.00<br>
+                | if (Cost_apples > Cost_mangoes):<br>
+                | &nbsp; print('Apples are costly.')<br>
+              </div>
+              <div class='codeout'>
+                | Apples are costly.
+              </div>
+              As the condition after the if statement is evaluated to true. The program executes the statement
+              after the ‘<b> if </b>’ condition and prints ‘ <b>Apples are costly.</b> ’<br><br>
+              <div class="subtitle">if, else Statement: </div><br>
+              In our last example, the program only does something if the condition returns True.<br><br>
+              But we also want it to do something if it returns False or even check a second or third condition
+             if the first one went wrong.<br><br>
+             In the following code we’ll change the condition to Cost_apples < Cost_mangoes. Hence, the
+            first expression will return False since Apples are costlier than mangoes, and the program will
+            execute the code written in else block.<br><br>
+            <div class='code'>
+                | Cost_apples = 50.00<br>
+                | Cost_mangoes = 45.00<br>
+                | if (Cost_apples < Cost_mangoes):<br>
+                | &nbsp; print('Mangoes are costly.')<br>
+                | else:<br>
+                | &nbsp; print('Apples are costly.')<br>
+              </div>
+              <div class='codeout'>
+                | Apples are costly.
+              </div>
+              As the program executes the block of code written after ‘ else ’ is displayed on the console.
+              <br><br>
+              <div class="subtitle">elif Statement: </div><br>
+              Let's change the cost of mangoes to 50.00.<br><br>
+              Now, to check whether the price of apples and mangoes is equal, you can include an ‘<b>elif</b>  ’
+              condition in your program<br><br>
+             In the following code we’ll change the condition to Cost_apples < Cost_mangoes. Hence, the
+            first expression will return False since Apples are costlier than mangoes, and the program will
+            execute the code written in else block.<br><br>
+            <div class='code'>
+                | Cost_apples = 50.00<br>
+                | Cost_mangoes = 45.00<br>
+                | if (Cost_apples < Cost_mangoes):<br>
+                | &nbsp; print('Mangoes are costly.')<br>
+                | elif (Cost_apples == Cost_mangoes):<br>
+                | &nbsp; print('Apples and Mangoes cost the same.')<br>
+                | else:<br>
+                | &nbsp; print('Apples are costly.')<br>
+              </div>
+              <div class='codeout'>
+                | Apples and Mangoes cost the same.
+              </div>
+              The condition in the ‘ elif ’ is met. Since, the cost of both the fruits are equal the program
+                will print ‘Apples and Mangoes cost the same. ’ on the console.
+              <br><br>
+              <b>Note: </b> You can have as many elifs as you want, just put them in sequence.<br><br>
+              <div class="subtitle">Nested conditions: </div><br>
+              There are times when you have to consider more than a single condition to perform a particular
+            task. You can use Nested if statements or Nested if else statements.<br><br>
+            For example,<br>
+            Lets develop a program which checks whether an year is a leap year or not.<br><br>
+              <div class='code'>
+                | # You can try executing the program for different values of year.<br>
+                | year = 2016<br>
+
+                | if (year%4==0):<br>
+                |    &nbsp;  if (year%100==0):<br>
+                |       &nbsp; &nbsp; if (year%400==0):<br>
+                |          &nbsp; &nbsp; &nbsp;  print('This is a leap year.')<br>
+                |        &nbsp; &nbsp; else:<br>
+                |           &nbsp; &nbsp; &nbsp; print("It's not a leap year.")<br>
+                |    &nbsp; else:<br>
+                |        &nbsp; &nbsp; print("This is a leap year.")<br>
+                | else:<br>
+                |    &nbsp; print("It's not a leap year.")<br>
+
+              </div>
+              <div class='codeout'>
+                | This is a leap year.
+              </div>
+              The above code checks whether a year is a leap year or not. We have used three if statements
+                which are all associated with an else statement.<br><br>
+                <div class="subtitle">Ternary Operator: </div>
+                The ternary operator is a one-line if statement.<br>
+                It's very handy for simple conditions.<br><br>
+                This is how it looks:<br><br>
+              <div class='code'>
+                | ( EXPRESSION ) if ( CONDITION ) else ( EXPRESSION )
+              </div>
+
+              Lets execute a python program to evaluate the cost of fruits, just like we did earlier, using
+              ternary operators.
+              <br><br>
+              <div class='code'>
+                | Cost_apples = 50.00<br>
+                | Cost_mangoes = 45.00<br>
+                | print('Apples are not costly.') if Cost_apples < Cost_mangoes else print('Apples are costly.')
+              </div>
+              <div class='codeout'>
+                | Apples are costly.<br>
+              </div>
+              In the above code, the condition <b> ( Cost_apples < Cost_mangoes )</b> is evaluated to False.
+            Hence, the statement mentioned prior to<b> if</b> condition are not executed.
+          </div>
+          <div>
+            <h2>LOOPS: </h2><br>
+            A loop continuously executes a specific block of code until a particular condition is
+            satisfied.<br>
+            In this section, you’ll learn about various kinds of loops and their implementation in the python
+            programming.<br>
+            There are two types of loops: for and while. You will learn about while loops in the next
+            section.<br><br>
+            <div class="subtitle">for Loops: </div><br>
+            A for loop is used to iterate through an iterable. This process is called iterating. You
+            can use a for-loop to define instructions that execute once for every item in an iterable, and you
+            can access and manipulate each item in the iterable from within the instructions you defined.<br><br>
+            <div class="code">
+                  | for ELEMENT in COLLECTION: <br>
+                  |  &nbsp; ( STATEMENTS ) 
+            </div>
+            For example,<br>
+            You can use a for loop to access all the characters in a string.<br><br>
+            <div class="code">
+                | string = ('CODEMUGG')<br>
+                | for char in string: <br>
+                |  &nbsp; print(char)
+          </div>
+          <div class="codeout">
+            | C<br>
+            | O <br>
+            | D<br>
+            | E<br>
+            | M <br>
+            | U <br>
+            | G<br>
+            | G<br>
+            </div>
+            In the above code, using a for loop we traverse through each character in a string and print
+            them one at a time.<br><br>
+            You can use for-loops to change the items in a mutable iterable, like a list:<br><br>
+            <div class="code">
+                | my_list = ['Welcome','to','Codemugg']<br>
+                | for words in my_list: <br>
+                |  &nbsp; print(words.upper())
+          </div>
+          <div class="codeout">
+            | WELCOME <br>
+            | TO <br>
+            | CODEMUGG
+            </div>
+            In the above program, we used a string method i.e. <b>upper()</b> which converts all the
+            characters of a string to uppercase.<br><br>
+            <h2>What if you want to iterate through a range of numbers.. ?</h2><br><br>
+            For that purpose we have an inbuilt range function called as <b> range()</b> .<br><br>
+            <div class="subtitle">Range() : </div>
+            The range function is widely used in for loops because it gives you a simple way to list
+            numbers.<br>
+            The following code will loop through the numbers 0 to 5 and print each of them.<br><br>
+            <div class="code">
+                | for num in range(5): <br>
+                |    &nbsp; print(num)
+          </div>
+          <div class="codeout">
+            | 0 <br>
+            | 1 <br>
+            | 2 <br>
+            | 3 <br>
+            | 4 <br>
+            </div>
+            The range() function takes a lower bound and an upper bound as its arguments. But if you just
+            pass a single number as an argument like in the above code, it is considered as upper limit. And
+            the lower limit is set to 0 by default, that’s why the numbers that range between 0 to 5 are
+            displayed in the output.<br><br>
+            Finally, it is also possible to set a step.<br>
+            Here we are starting at 10 and incrementing by 2 until 20, since 20 is the upper limit, it is not
+            included.<br><br>
+            <div class="code">
+                | for num in range(10,20,2): <br>
+                |    &nbsp; print(num)
+          </div>
+          <div class="codeout">
+            | 10 <br>
+            | 12 <br>
+            | 14 <br>
+            | 16 <br>
+            | 18 <br>
+            </div>
+            If you want to terminate a loop in between its execution, you can use a break statement for it.<br><br>
+            <div class="subtitle">Break : </div>
+            A break keyword is used to stop the execution of a loop.<br><br>
+            <div class="code">
+                | my_country = ['India','Argentina','Canada','Brazil']<br>
+                | for country in my_country: <br>
+                |  &nbsp; print(country)<br>
+                | &nbsp; if country == 'Canada':<br>
+                |  &nbsp; &nbsp; break<br>
+          </div>
+          <div class="codeout">
+            | India <br>
+            | Argentina <br>
+            | Canada
+            </div>
+            The above code illustrates the use of break statement. The countries in the loop are printed until
+            the if condition is evaluated to true. When the if condition is statisfied the loop is
+            terminated.<br><br>
+            If you just want to skip a particular element from a list and continue the execution of the next
+            statement, you can use a <b>continue</b> keyword to skip the element.<br><br>
+            <div class="subtitle">Continue : </div><br>
+            A continue keyword is used to skip a specific element from a list.<br>
+            Let’s try using a continue keyword in the above example:
+            <br><br>
+            <div class="code">
+                | my_country = ['India','Argentina','Canada','Brazil']<br>
+                | for country in my_country: <br>
+                | &nbsp; if country == 'Canada':<br>
+                |  &nbsp; &nbsp; continue<br>
+                |  &nbsp; print(country)<br>
+          </div>
+          <div class="codeout">
+            | India <br>
+            | Argentina <br>
+            | Brazil
+            </div>
+            The above program prints all the countries in list which doesn’t statisfies the if condition.<br>
+            When the iterator reaches to ‘ <b>Canada</b> ’ the block of code after the condition is eliminated and
+            the execution is continued from next country i.e. ‘ <b>Brazil</b> ’.<br>
+            <div class="subtitle">Nested For loop : </div><br>
+            Sometimes you have more complex collections, like a list of lists. To iterate over these lists, you
+            need nested for loops<br>
+            Following code will help you to understand the use of nested for loops.
+            <br><br>
+            <div class="code">
+                | my_country = [['BMW I8', 'BMW X3','BMW X1'],<br>
+                &nbsp;  &nbsp; ['Ferrari 812', 'Ferrari F8','Ferrari GTC4'],<br>
+                &nbsp;  &nbsp; ['McLaren 570S', 'McLaren 570GT','McLaren 720S']]<br>
+                <br>
+                | for brand in car_models:<br>
+                | &nbsp; for model in brand:<br>
+                | &nbsp; &nbsp; print(model)<br>
+          </div>
+          <div class="codeout">
+            | BMW I8<br>
+            | BMW X3<br>
+            | BMW X1<br>
+            | Ferrari 812<br>
+            | Ferrari F8<br>
+            | Ferrari GTC4<br>
+            | McLaren 570S<br>
+            | McLaren 570GT<br>
+            | McLaren 720S<br>
+            </div>
+            In the above example,<br>
+            Each list in car_models list, for instance [‘BMW I8’,’BMW X3’,’BMW X1’] , is collectively
+            called as a brand and each element in brand is called as model and is printed on console.<br>
+            <div class="subtitle">while loop : </div><br>
+            The block of code written inside a while loop is only executed if the condition at the start of the
+            loop is satisfied.<br>
+            The syntax of a while loop is shown below:
+            <br><br>
+            <div class="code">
+                | while ( CONDITION ):<br>
+                | &nbsp; ( STATEMENTS )<br>
+          </div>
+          The loop will continue executing until the condition is True.<br>
+          Following code is an example of implementing a while loop:<br><br>
+          <div class="code">
+            | # Printing square of numbers<br>
+            | number = 1<br>
+            | while ( number <= 5 ):<br>
+            | &nbsp; print(number, ' = ', number**2)<br>
+            | &nbsp; number += 1
+         </div>
+        <div class="codeout">
+        | 1 = 1<br>
+        | 2 = 4<br>
+        | 3 = 9<br>
+        | 4 = 16<br>
+        | 5 = 25<br>
+        </div>
+        The code executes till the condition <b>number <= 5 </b> is met. Once, the value of number becomes
+        6, the loop is terminated.<br><br>
+        <div class="subtitle">else block : </div>
+        When the condition at the start of the while loop returns False, the else block will be executed.
+        <div class="code">
+            | # Printing square of numbers<br>
+            | number = 1<br>
+            | while ( number <= 5 ):<br>
+            | &nbsp; print(number, ' = ', number**2)<br>
+            | &nbsp; number += 1<br>
+            | else:<br>
+            | &nbsp; print("Program executed..!")<br>
+         </div>
+        <div class="codeout">
+        | 1 = 1<br>
+        | 2 = 4<br>
+        | 3 = 9<br>
+        | 4 = 16<br>
+        | 5 = 25<br>
+        | Program executed..!
+        </div>
+        To break out of a while loop in Python:<br>
+        Similar to the for loop, you can simply use the break keyword, and the loop will stop its
+        execution.<br><br>
+        <div class="code">
+            | # Printing square of numbers<br>
+            | number = 1<br>
+            | while ( number <= 5 ):<br>
+            | &nbsp; if number == 4:<br>
+            | &nbsp; &nbsp; break <br>
+            | &nbsp; print(number, ' = ', number**2)<br>
+            | &nbsp; number += 1<br>
+            | else:<br>
+            | &nbsp; print("Program executed..!")<br>
+         </div>
+         <div class="codeout">
+            | 1 = 1<br>
+            | 2 = 4<br>
+            | 3 = 9<br>
+        </div>
+            The loop runs normally, and when number reaches 4 the if statement evaluates to True and the
+            break command is called. This finishes the loop before the squared value of the numbers 4 and
+            5 are calculated and else the number doesn’t get incremented further, the while condition is
+            always evaluated to true and the else block is never executed.<br><br>
+            To skip the execution of a particular statement of a while loop in Python:
+            Similar to the for loop, you can simply use the continue keyword, and the loop will skip the
+            execution and continue from the next condition.<br><br>
+            <div class="code">
+                | # Printing square of numbers<br>
+                | number = 1<br>
+                | while ( number <= 5 ):<br>
+                | &nbsp; number += 1<br>
+                | &nbsp; if number == 4:<br>
+                | &nbsp; &nbsp; continue <br>
+                | &nbsp; print(number, ' = ', number**2)<br>
+                | else:<br>
+                | &nbsp; print("Program executed..!")<br>
+             </div>
+             <div class="codeout">
+                | 1 = 1<br>
+                | 2 = 4<br>
+                | 3 = 9<br>
+                | 5 = 25<br>
+                | Program executed..!
+            </div> 
+            The program always checks if 4 is the current value of the number. If it is, the square of 4 won't
+            be calculated and the continue will skip to the next iteration when the value of number is 5.  <br><br>
+            <b>Congratulations.. You finished two sections of the course. Follow the next section to know
+            more about the data types in python.</b>
+          </div>
+    
+            <a href="py00100.html" class="previous" >&laquo; Previous</a>
+            <a href="py00300.html" class="next" style="float: right;">Next &raquo</a> 
+          </div>
+
+        <iframe src="https://trinket.io/embed/python/8119fce88f" title="Python Terminal" noresize=yes>
+        </iframe>
+      
+      
+    </div>
+  </body>
+</html>
