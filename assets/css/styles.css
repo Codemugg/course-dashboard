@@ -82,6 +82,7 @@ body {
 .wrapper .main_content {
   width: 100%;
   margin-left: 230px;
+  margin-bottom: 270px;
 }
 
 .wrapper .main_content .header {
@@ -122,8 +123,74 @@ h5 {
 #donation:hover{
   color: #e0e4e8;
 }
+ div{
+   text-align: justify;
+ }
+/* Codes*/
+.code{
+  color: #000000;
+  background-color: #c2c2c3;
+  font-family: 'Courier New', Courier, monospace;
+}
+.codeout{
+  color:#a70118;
+  background-color: #dadada;
+  font-family: 'Courier New', Courier, monospace;
+}
 
-/*Scrollbar*/
+/*Subtitle*/
+.subtitle {
+  color: #000000;
+  text-decoration: underline;
+  font-size: 20px;
+}
+/*Next and previous*/
+.previous {
+  text-align: center;
+  background-color: #d0cdcd;
+  color: black;
+  padding: 10px;
+
+}
+
+.next {
+  text-align: center;
+  background-color:#ec3750;
+  color: white;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+/* Images*/
+.img{
+  text-align: center;
+  text-decoration: underline;
+}
+.img img{
+  height: auto;
+  max-width: 100%;
+}
+
+/*Tables*/
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  
+}
+th, td {
+  padding: 5px;
+  text-align: left;  
+  text-align: center;  
+}
+
+/*Terminal*/
+iframe{
+  position: fixed;
+  bottom: 0;
+  height: 250px;
+  width: 100%;
+
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
