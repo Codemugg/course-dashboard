@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:src" content="assets/images/index-meta.png" />
+    <meta property="og:image" content="assets/images/index-meta.png" />
+    <meta
+      name="twitter:title"
+      content="Codemugg - Learning Without A Price Tag"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/codemugg-logo-white-1.png"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Codemugg is a non-profit organization that aims to provide free courses on programming being said that learning should never come with a price."
+    />
+    <title>Codemugg Course Template</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" >
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <style>
+      .btn{
+        width: 100%;
+        text-align: center;
+        padding-top: 100px;
+      }
+      #terminal_btn{
+        padding: 10px;
+         background-color: #232323;
+        color:#ec3750;
+        text-align: center;
+      }
+     </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h2>Codemugg Inc</h2>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-address-book"></i>Contact</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-pencil-alt"></i>Courses</a>
+          </li>
+          <li>
+            <a id="donation" href="#"
+              ><i class="fas fa-donate"></i><b>Donate</b></a
+            >
+          </li>
+        </ul>
+        <br />
+        <hr />
+        <ul>
+          <li><a href="cpp00100.html">Chapter 1</a></li>
+          <li><a href="cpp00200.html">Chapter 2</a></li>
+          <li><a href="cpp00300.html">Chapter 3</a></li>
+          <li><a href="cpp00400.html">Chapter 4</a></li>
+          <li><a href="cpp00500.html">Chapter 5</a></li>
+          <li><a href="cpp00600.html">Chapter 6</a></li>
+          <li><a href="cpp00700.html">Chapter 7</a></li>
+          <li><a href="cpp00800.html">Chapter 8</a></li>
+          <li><a href="cpp00801.html">Chapter 9</a></li>
+          <li><a href="cpp00900.html">Chapter 10</a></li>
+        </ul>
+        <div>
+          <h5>Copyright 2021 - Codemugg Inc.<br />All Rights Reserved.</h5>
+        </div>
+        <div class="social_media">
+          <a href="https://facebook.com/codemugg" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/codemugg" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com/code.mugg" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://discord.gg/6YtH2j8cGe" target="_blank"
+            ><i class="fab fa-discord"></i
+          ></a>
+        </div>
+      </div>
+      <div class="main_content">
+        <div class="header">C++ BEGINNERS COURSE BY CODEMUGG</div>
+        <div class="info">
+          <div>
+            <h2>DATA TYPES IN CPP: </h2><br>
+            All variables use data-type during declaration to restrict the type of data to be stored.
+            Therefore, we can say that data types are used to tell the variables the type of data it
+            can store. Whenever a variable is defined in C++, the compiler allocates some memory
+            for that variable based on the data-type with which it is declared. Every data type
+            requires a different amount of memory.<br>
+            Data types in C++ is mainly divided into three types:<br><br>
+          </div>
+          <div>
+
+            <div class="subtitle">
+              <b>Primitive Data Types:  </b> 
+            </div><br>
+            These data types are built-in or predefined data types
+            and can be used directly by the user to declare variables. example: int, char ,
+            float, bool etc. Primitive data types available in C++ are:<br><br>
+            <ul>
+                <li style="list-style: disc;"> &nbsp; Integer </li>
+                <li style="list-style: disc;">  &nbsp;Character </li>
+                <li style="list-style: disc;">  &nbsp;Boolean </li>
+                <li style="list-style: disc;">  &nbsp;Floating Point </li>
+                <li style="list-style: disc;">  &nbsp;Double Floating Point </li>
+                <li style="list-style: disc;">  &nbsp;Valueless or Void </li>
+                <li style="list-style: disc;">  &nbsp;Wide Character </li>
+            </ul>
+            
+            <br><br>
+            <div class="subtitle">
+                <b>Derived Data Types:  </b> 
+              </div><br>
+              The data-types that are derived from the primitive or
+              built-in datatypes are referred to as Derived Data Types. These can be of
+              four types namely:<br><br>
+              <ul>
+                  <li style="list-style: disc;"> &nbsp;Function</li>
+                  <li style="list-style: disc;">  &nbsp;Pointer </li>
+                  <li style="list-style: disc;">  &nbsp;Array </li>
+                  <li style="list-style: disc;">  &nbsp;Reference </li>
+              </ul>
+              
+              <br><br>
+              <div class="subtitle">
+                <b>Abstract or User-Defined Data Types:  </b> 
+              </div><br>
+              These data types are defined by user
+                itself. Like, defining a class in C++ or a structure. C++ provides the following
+                user-defined datatypes:<br><br>
+              <ul>
+                  <li style="list-style: disc;"> &nbsp;Class</li>
+                  <li style="list-style: disc;">  &nbsp;Structure </li>
+                  <li style="list-style: disc;">  &nbsp;Union </li>
+                  <li style="list-style: disc;">  &nbsp;Enumeration </li>
+                  <li style="list-style: disc;">  &nbsp;Typedef defined DataType </li>
+              </ul>
+              
+              <br><br>
+              <div class="subtitle">
+                <b>Datatype Modifiers:  </b> 
+              </div><br>
+              As the name implies, datatype modifiers are used with the built-in data types to modify
+                the length of data that a particular data type can hold.<br>
+                Data type modifiers available in C++ are:<br><br>
+              <ul>
+                  <li style="list-style: disc;"> &nbsp;Signed</li>
+                  <li style="list-style: disc;">  &nbsp;Unsigned </li>
+                  <li style="list-style: disc;">  &nbsp;Short </li>
+                  <li style="list-style: disc;">  &nbsp;Long </li>
+              </ul>
+              <br>
+              <br>
+              <table style="width:100%">
+                <tr>
+                  <th>DATA TYPE </th>
+                  <th>SIZE (IN BYTES)</th>
+                  <th>RANGE</th>
+                </tr>
+                <tr>
+                  <td>SHORT INT</td>
+                  <td>2</td>
+                  <td>-32,768 TO 32,767</td>
+                </tr>
+                <tr>
+                    <td>UNSIGNED SHORT INT</td>
+                    <td>2</td>
+                    <td>0 TO 65,535</td>
+                  </tr>
+                  <tr>
+                    <td>UNSIGNED INT</td>
+                    <td>4</td>
+                    <td>0 TO 4,294,967,295</td>
+                  </tr>
+                  <tr>
+                    <td>INT</td>
+                    <td>4</td>
+                    <td>-2,147,483,648 TO 2,147,483,647</td>
+                  </tr>
+                  <tr>
+                    <td>LONG INT</td>
+                    <td>8</td>
+                    <td>-2,147,483,648 TO 2,147,483,647</td>
+                  </tr>
+                  <tr>
+                    <td>UNSIGNED LONG INT </td>
+                    <td>8</td>
+                    <td>-2,147,483,648 TO 2,147,483,647</td>
+                  </tr>
+                  <tr>
+                    <td>LONG LONG INT</td>
+                    <td>8</td>
+                    <td>-(2^63) TO (2^63)-1</td>
+                  </tr>
+                  <tr>
+                    <td>UNSIGNED LONG LONG INT</td>
+                    <td>8</td>
+                    <td>0 TO 18,446,744,073,709,551,615</td>
+                  </tr>
+                  <tr>
+                    <td>SIGNED CHAR</td>
+                    <td>1</td>
+                    <td>-128 TO 127</td>
+                  </tr>
+                  <tr>
+                    <td>UNSIGNED CHAR</td>
+                    <td>1</td>
+                    <td>0 TO 255</td>
+                  </tr>
+                  <tr>
+                    <td>FLOAT</td>
+                    <td>4</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>DOUBLE</td>
+                    <td>8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>LONG DOUBLE</td>
+                    <td>12</td>
+                    <td>-</td>
+                  </tr>
+            </table><br><br>
+            <b>Note :</b> Above values may vary from compiler to compiler. In the above example, we have
+            considered GCC 32 bit.<br><br>
+            We can display the size of all the data types by using the sizeof() operator and passing
+            the keyword of the data type as argument to this function as shown below:<br><br>
+            <div class="code">
+                | // C++ program to sizes of data types<br>
+                | #include &#60; iostream><br>
+                | using namespace std;<br>
+                | int main()<br>
+                | {<br>
+                | &nbsp; cout &laquo "Size of char : " &laquo sizeof(char) &laquo " byte" &laquo endl;<br>
+                | &nbsp; cout &laquo "Size of int : " &laquo sizeof(int)&laquo " bytes" &laquo endl;<br>
+                | &nbsp; cout &laquo  "Size of short int : " &laquo  sizeof(short int)&laquo  " bytes" &laquo  endl;<br>
+                | &nbsp; cout &laquo  "Size of long int : " &laquo  sizeof(long int)&laquo  " bytes" &laquo  endl;<br>
+                | &nbsp; cout &laquo  "Size of signed long int : " &laquo  sizeof(signed long int)&laquo  " bytes" &laquo  endl;<br>
+                | &nbsp; cout &laquo  "Size of unsigned long int : " &laquo  sizeof(unsigned long int)&laquo  " bytes" &laquo  endl;<br>
+                | &nbsp; cout &laquo  "Size of float : " &laquo  sizeof(float)&laquo  " bytes" &laquo endl;<br>
+                | &nbsp; cout &laquo  "Size of double : " &laquo  sizeof(double) &laquo  " bytes" &laquo  endl;<br>
+                | &nbsp; cout &laquo  "Size of wchar_t : " &laquo  sizeof(wchar_t)&laquo  " bytes" &laquo endl;<br>
+                | &nbsp; return 0;<br>
+                | }<br>
+            </div><br>
+            <b>OUTPUT : </b>
+            <div class="codeout">
+                Size of char : 1 byte<br>
+                Size of int : 4 bytes<br>
+                Size of short int : 2 bytes<br>
+                Size of long int : 8 bytes<br>
+                Size of signed long int : 8 bytes<br>
+                Size of unsigned long int : 8 bytes<br>
+                Size of float : 4 bytes<br>
+                Size of double : 8 bytes<br>
+                Size of wchar_t : 4 bytes<br>
+            </div>
+            <br><br>
+          </div>
+          <div>
+            <h2> VARIABLES: </h2><br>
+            A variable is a name given to a memory location. It is the basic unit of storage in a
+            program.<br>
+            ● The value stored in a variable can be changed during program execution.<br>
+            ● A variable is only a name given to a memory location, all the operations
+            done on the variable effects that memory location.<br>
+            ● In C++, all the variables must be declared before use.<br><br>
+            Following is the syntax for declaring variables:<br><br>
+            <div class="code">
+                | A typical variable declaration is of the form:<br>
+                | // Declaring a single variable<br>
+                | type variable_name;<br>
+                | <br>
+                | // Declaring multiple variables:<br>
+                | type variable1_name, variable2_name, variable3_name;<br>
+            </div>
+            <b>Note :</b>A variable name can consist of alphabets (both upper and lower case), numbers and
+            the underscore ‘_’ character. However, the name must not start with a number.
+            <br><br>
+            Following Program shows the declaration and definition of Variables:<br><br>
+            <div class="code">
+                | #include &#60; iostream><br>
+                | using namespace std;<br>
+                | int main()<br>
+                | {<br>
+                | &nbsp; // declaration and definition<br>
+                | &nbsp; // of variable 'a123'<br>
+                | &nbsp; char a123 = 'a';<br>
+                | &nbsp; // This is also both declaration and definition<br>
+                | &nbsp; // as 'b' is allocated memory and<br>
+                | &nbsp; // assigned some garbage value.<br>
+                | &nbsp; float b;<br>
+                | &nbsp; // multiple declarations and definitions<br>
+                | &nbsp; int _c, _d45, e;<br>
+                | &nbsp; // Let us print a variable<br>
+                | &nbsp; cout << a123 << endl;<br>
+                | &nbsp; return 0;<br>
+                | }
+            </div>
+            <br><b>OUTPUT</b>
+            <br><br>      
+            <div class="codeout">
+                | a<br>
+            </div>      
+          </div><br>
+          <div>
+            <h2>TYPES OF VARIABLES: </h2><br>
+            There are three types of variables based on the scope of variables in C++:<BR>
+            ● Local Variables<BR>
+            ● Instance Variables<BR>
+            ● Static Variables<BR><br>
+             
+            <div class="subtitle">   Local Variables: </div><br>
+            A variable defined within a block or method or constructor
+            is called local variable.<br><br>
+            ○ These variable are created when the block in entered or the
+            function is called and destroyed after exiting from the block or
+            when the call returns from the function.<br>
+            ○ The scope of these variables exists only within the block in
+            which the variable is declared. i.e. we can access these variable
+            only within that block.<br>
+            ○ Initialization of Local Variable is Mandatory.<br><br>
+            <b>Sample Program 1: </b><br><br>  
+            <div class="code">
+                | // C++ program to demonstrate Local variables<br>
+                | #include &#60; iostream><br>
+                | using namespace std;<br>
+                | void StudentAge()<br>
+                | {<br>
+                |  &nbsp; // local variable age<br>
+                |  &nbsp; int age = 0;<br>
+                |  &nbsp; age = age + 5;<br>
+                |  &nbsp; cout << "Student age is : " << age;<br>
+                | }<br>
+                | // Driver code<br>
+                | int main()<br>
+                | {<br>
+                |  &nbsp; StudentAge();<br>
+                | }<br>
+            </div>  <br><br><b>OUTPUT</b><BR><BR>
+            <div class="codeout">
+                | Student age is : 5
+            </div><br><br>
+            In the above program, the variable age is a local variable to the function
+            StudentAge(). If we use the variable age outside StudentAge() function, the
+            compiler will produce an error as shown in below program.<br><br>
+            <b>Sample Program 2: </b><br><br>  
+            <div class="code">
+                | // C++ program to demonstrate Local variables<br>
+                | #include &#60; iostream><br>
+                | using namespace std;<br>
+                | void StudentAge()<br>
+                | {<br>
+                |  &nbsp; // local variable age<br>
+                |  &nbsp; int age = 0;<br>
+                |  &nbsp; age = age + 5;<br>
+                
+                | }<br>
+                | // Driver code<br>
+                | int main()<br>
+                | {<br>
+                |  &nbsp; StudentAge();<br>
+                |  &nbsp; cout << "Student age is : " << age;<br>
+                | }<br>
+            </div><br> <br> 
+            <div class="subtitle">  Instance Variables: </div><br>  
+            Instance variables are non-static variables and are
+            declared in a class outside any method, constructor or block.<br> <br> 
+            ○ As instance variables are declared in a class, these variables
+            are created when an object of the class is created and
+            destroyed when the object is destroyed.<br> 
+            ○ Unlike local variables, we may use access specifiers for
+            instance variables. If we do not specify any access specifier
+            then the default access specifier will be used.<br> 
+            ○ Initialization of Instance Variable is not Mandatory.<br> 
+            ○ Instance Variable can be accessed only by creating objects.<br> <br> 
+            <div class="code">
+                | // C++ program to demonstrate Local variables<br>
+                | #include &#60; iostream><br>
+                | using namespace std;<br>
+                | class Marks {<br>
+                |  &nbsp;  public:<br>
+                |   &nbsp; // This is a class variable<br>
+                |  &nbsp;  static int studentNumber;<br>
+                |  &nbsp;  // These variables are instance variables.<br>
+                |   &nbsp; // These variables are in a class<br>
+                |   &nbsp; // and are not inside any function<br>
+                |   &nbsp; int engMarks;<br>
+                |   &nbsp; int mathsMarks;<br>
+                |   &nbsp; int phyMarks;<br>
+                |   &nbsp; public:<br>
+                |   &nbsp;&nbsp; Marks()<br>
+                |   &nbsp;&nbsp;&nbsp; {<br>
+                |   &nbsp; &nbsp;&nbsp;&nbsp;// Modify the class variable<br>
+                |   &nbsp;&nbsp;&nbsp;&nbsp; ++studentNumber;<br>
+                |   &nbsp;&nbsp;&nbsp; };<br>
+                |   &nbsp;&nbsp;};<br>
+                |   &nbsp;// Setting the class variable of Marks<br>
+                |   &nbsp;int Marks::studentNumber = 0;<br>
+                |   &nbsp;// Driver code<br>
+                |   &nbsp;int main()<br>
+                |   &nbsp;{<br>
+                |    &nbsp;&nbsp;// first object<br>
+                |    &nbsp;&nbsp;Marks obj1;<br>
+                |    &nbsp;&nbsp;obj1.engMarks = 50;<br>
+                |    &nbsp;&nbsp;obj1.mathsMarks = 80;<br>
+                |    &nbsp;&nbsp;obj1.phyMarks = 90;<br>
+                |    &nbsp;&nbsp;// second object<br>
+                |    &nbsp;&nbsp;Marks obj2;<br>
+                |    &nbsp;&nbsp;obj2.engMarks = 80;<br>
+                |   &nbsp;&nbsp;obj2.mathsMarks = 60;<br>
+                | &nbsp;&nbsp;obj2.phyMarks = 85;<br>
+                | &nbsp;&nbsp;// displaying marks for first object<br>
+                | &nbsp;&nbsp;cout << "Marks for first object:\n";<br>
+                | &nbsp;&nbsp;cout << Marks::studentNumber << endl;<br>
+                | &nbsp;&nbsp;cout << obj1.engMarks << endl;<br>
+                | &nbsp;&nbsp;cout << obj1.mathsMarks << endl;<br>
+                | &nbsp;&nbsp;cout << obj1.phyMarks << endl;<br>
+                | &nbsp;&nbsp;// displaying marks for second object<br>
+                | &nbsp;&nbsp;cout << "Marks for second object:\n";<br>
+                | &nbsp;&nbsp;cout << Marks::studentNumber << endl;<br>
+                | &nbsp;&nbsp;cout << obj2.engMarks << endl;<br>
+                | &nbsp;&nbsp;cout << obj2.mathsMarks << endl;<br>
+                | &nbsp;&nbsp;cout << obj2.phyMarks << endl;<br>
+                | }
+            </div><br><b>OUTPUT</b><br><br>
+            <div class='codeout'>
+                |<br>
+                | Marks for first object:<br>
+                | 2<br>
+                | 50<br>
+                | 80<br>
+                | 90<br>
+                | Marks for second object:<br>
+                | 2<br>
+                | 80<br>
+                | 60<br>
+                | 85<br>
+            </div><br><br>
+            <div class="subtitle">
+                Static Variable :
+            </div>
+            These variables are declared similarly as instance variables, the
+            difference is that static variables are declared using the static
+            keyword within a class outside any method constructor or block.<br>
+            Unlike instance variables, we can only have one copy of a static
+            variable per class irrespective of how many objects we create.<br><br>
+            <i>To access static variables, we need not create an object of that class, we can
+                simply access the variable as<br>
+                <b>class_name::variable_name;</b></i><br><br>
+            <div class="code">
+                | Syntax for static and instance variables:<br>
+                | class Example<br>
+                | {<br>
+                |     static int a; // static variable<br>
+                |     int b; // instance variable<br>
+                | }<br>
+
+            </div>
+          </div>
+          <a href="cpp00100.html" class="previous" >&laquo Previous</a>
+            <a href="cpp00300.html" class="next" style="float: right;">Next &raquo</a>
+            
+          </div>
+          <div class="btn"><a href="#" id="terminal_btn" >JUMP TO TERMINAL</a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

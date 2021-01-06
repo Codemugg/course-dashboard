@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:src" content="assets/images/index-meta.png" />
+    <meta property="og:image" content="assets/images/index-meta.png" />
+    <meta
+      name="twitter:title"
+      content="Codemugg - Learning Without A Price Tag"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/codemugg-logo-white-1.png"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Codemugg is a non-profit organization that aims to provide free courses on programming being said that learning should never come with a price."
+    />
+    <title>Codemugg Course Template</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" >
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <style>
+      .btn{
+        width: 100%;
+        text-align: center;
+        padding-top: 100px;
+      }
+      #terminal_btn{
+        padding: 10px;
+         background-color: #232323;
+        color:#ec3750;
+        text-align: center;
+      }
+     </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h2>Codemugg Inc</h2>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-address-book"></i>Contact</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-pencil-alt"></i>Courses</a>
+          </li>
+          <li>
+            <a id="donation" href="#"
+              ><i class="fas fa-donate"></i><b>Donate</b></a
+            >
+          </li>
+        </ul>
+        <br />
+        <hr />
+        <ul>
+          <li><a href="cpp00100.html">Chapter 1</a></li>
+          <li><a href="cpp00200.html">Chapter 2</a></li>
+          <li><a href="cpp00300.html">Chapter 3</a></li>
+          <li><a href="cpp00400.html">Chapter 4</a></li>
+          <li><a href="cpp00500.html">Chapter 5</a></li>
+          <li><a href="cpp00600.html">Chapter 6</a></li>
+          <li><a href="cpp00700.html">Chapter 7</a></li>
+          <li><a href="cpp00800.html">Chapter 8</a></li>
+          <li><a href="cpp00801.html">Chapter 9</a></li>
+          <li><a href="cpp00900.html">Chapter 10</a></li>
+        </ul>
+        <div>
+          <h5>Copyright 2021 - Codemugg Inc.<br />All Rights Reserved.</h5>
+        </div>
+        <div class="social_media">
+          <a href="https://facebook.com/codemugg" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/codemugg" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com/code.mugg" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://discord.gg/6YtH2j8cGe" target="_blank"
+            ><i class="fab fa-discord"></i
+          ></a>
+        </div>
+      </div>
+      <div class="main_content">
+        <div class="header">C++ BEGINNERS COURSE BY CODEMUGG</div>
+        <div class="info">
+          <div>
+            <h2>OPERATORS  in C++ :</h2><br />
+            Operators are the foundation of any programming language. Thus the functionality of
+            C/C++ programming language is incomplete without the use of operators. We can
+            define operators as symbols that help us to perform specific mathematical and logical
+            computations on operands. In other words, we can say that an operator operates the
+            operands.
+             <br><br>
+             For example, consider the below statement:<br><br>
+            <div class="code">
+                | c = a + b;<br><br>
+            </div>
+            Here, ‘<b>+</b>’ is the operator known as addition operator and ‘a’ and ‘b’ are operands. The
+            addition operator tells the compiler to add both of the operands ‘a’ and ‘b’.<br><br>
+            &nbsp;<b>1. Arithmetic Operators:</b> These are the operators used to perform
+            arithmetic/mathematical operations on operands. &nbsp;Examples: (+, -, *, /,
+            %,++,–). Arithmetic operator are of two types:<br>
+            &nbsp; &nbsp; 1. Unary Operators: Operators that operates or works with a
+            single operand are unary operators. For example: (++ , –)<br>
+            &nbsp; &nbsp; 2. Binary Operators: Operators that operates or works with two
+            operands are binary operators. For example: (+ , – , * , /)<br>
+            &nbsp;<b>2. Relational Operators:</b> These are used for comparison of the values of two
+            operands. For example, checking if one operand is equal to the other
+            operand or not, an operand is greater than the other operand or not etc.
+            Some of the relational operators are (==, >= , <= ).<br>
+            &nbsp;<b>3. Logical Operators:</b> Logical Operators are used to combine two or more
+            conditions/constraints or to complement the evaluation of the original
+            condition in consideration. The result of the operation of a logical operator is
+            a boolean value either true or false. For example, the logical AND
+            represented as ‘&&’ operator in C or C++ returns true when both the
+            conditions under consideration are satisfied. Otherwise it returns false.
+            Therfore, a && b returns true when both a and b are true (i.e. non-zero).<br>
+            &nbsp;<b>4. Bitwise Operators:</b> The Bitwise operators is used to perform bit-level
+            operations on the operands. The operators are first converted to bit-level
+            and then the calculation is performed on the operands. The mathematical
+            operations such as addition, subtraction, multiplication etc. can be
+            performed at bit-level for faster processing. For example, the bitwise AND
+            represented as & operator in C or C++ takes two numbers as operands
+            and does AND on every bit of two numbers. The result of AND is 1 only if
+            both bits are 1.
+            <br>
+            &nbsp;<b>5. Assignment Operators:</b> Assignment operators are used to assign value to
+            a variable. The left side operand of the assignment operator is a variable
+            and right side operand of the assignment operator is a value. The value on
+            the right side must be of the same data-type of variable on the left side
+            otherwise the compiler will raise an error.
+            <br><br>
+            <div class="subtitle">Operator precedence chart: </div><br><br>
+            The below table describes the precedence order and associativity of operators in C /
+            C++ . Precedence of operator decreases from top to bottom.<br><br>
+            <table style="width:100%">
+                <tr>
+                  <th>OPERATOR</th>
+                  <th>DESCRIPTION</th>
+                  <th>ASSOCIATIVITY</th>
+                </tr>
+                <tr>
+                  <td>()</td>
+                  <td>Parentheses (function call)</td>
+                  <td>left-to-right</td>
+                </tr>
+                <tr>
+                  <td>[]</td>
+                  <td>Brackets (array subscript)</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>. </td>
+                  <td>Member selection via object name</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>-></td>
+                  <td>Member selection via pointer</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>++/--</td>
+                  <td>Prefix increment/decrement</td>
+                  <td>right-to-left</td>
+                </tr>
+                <tr>
+                  <td>++/--</td>
+                  <td>Postfix increment/decrement</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>+/- </td>
+                  <td>Unary plus/minus</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                    <td>!~</td>
+                    <td>Logical negation/bitwise complement</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>(type) </td>
+                    <td>Cast (convert value to temporary value of type)</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>* </td>
+                    <td>Dereference</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>& </td>
+                    <td>Address (of operand)</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>sizeof</td>
+                    <td>Determine size in bytes on this implementation</td>
+                    <td>left-to-right</td>
+                  </tr>
+                  <tr>
+                    <td>+/- </td>
+                    <td>Addition/subtraction</td>
+                    <td>left-to-right</td>
+                  </tr>
+                  <tr>
+                    <td><< , >> </td>
+                    <td>Bitwise shift left, Bitwise shift right</td>
+                    <td>left-to-right</td>
+                  </tr>
+                  <tr>
+                    <td>< , <= </td>
+                    <td>Relational less than/less than or equal to </td>
+                    <td>left-to-right</td>
+                  </tr>
+                  <tr>
+                    <td>> , >= </td>
+                    <td>Relational greater than/greater than or equal to</td>
+                    <td>left-to-right</td>
+                  </tr>
+                  <tr>
+                    <td>== , != </td>
+                    <td>Relational is equal to/is not equal to</td>
+                    <td>left-to-right</td>
+                  </tr>
+                  <tr>
+                    <td>&</td>
+                    <td>Bitwise AND</td>
+                    <td>left-to-right</td>
+                  </tr>
+                  <tr>
+                    <td>^</td>
+                    <td>Bitwise exclusive OR</td>
+                    <td>left-to-right</td>
+                  </tr>
+                  <tr>
+                    <td>|</td>
+                    <td>Bitwise inclusive OR</td>
+                    <td>left-to-right</td>
+                  </tr>
+                  <tr>
+                    <td>&&</td>
+                    <td>Logical AND</td>
+                    <td>left-to-right</td>
+                  </tr>
+                  <tr>
+                    <td>?: </td>
+                    <td>Ternary conditional </td>
+                    <td>right-to-left</td>
+                  </tr>
+                  <tr>
+                    <td>=</td>
+                    <td>Assignment</td>
+                    <td>right-to-left</td>
+                  </tr>
+                  <tr>
+                    <td>+= , -=</td>
+                    <td>Addition/subtraction assignment</td>
+                    <td>left-to-right</td>
+                  </tr>
+                  <tr>
+                    <td>*= , /=</td>
+                    <td>Multiplication/division assignment</td>
+                    <td>left-to-right</td>
+                  </tr>
+                  <tr>
+                    <td>%= , &=</td>
+                    <td>Modulus/bitwise AND assignment</td>
+                    <td>left-to-right</td>
+                  </tr>
+                  <tr>
+                    <td>^= , |=</td>
+                    <td>Bitwise exclusive/inclusive OR assignment</td>
+                    <td>left-to-right</td>
+                  </tr>
+                  <tr>
+                    <td>,</td>
+                    <td>Expression separator</td>
+                    <td>-</td>
+                  </tr>
+              </table><br><br>
+        </div>
+        <div>
+            <h2>UNARY OPERATORS: </h2><br>
+            Unary operator: are operators that act upon a single operand to produce a new value.<br><br>
+                Types of unary operators:<br>
+                1. unary minus(-)<br>
+                2. increment(++)<br>
+                3. decrement(--)<br>
+                4. NOT(!)<br>
+                5. Addressof operator(&)<br>
+                6. sizeof()<br>
+            <br><br>
+            C++ program for combination of prefix and postfix operations:
+            <br><br>
+            <div class="code">
+                | // C++ program to demonstrate working of unary increment<br>
+                | // and decrement operators<br>
+                | #include &#60; iostream><br>
+                | using namespace std;<br>
+                | int main()<br>
+                | {<br>
+                | &nbsp; // Post increment<br>
+                | &nbsp; int a = 1;<br>
+                | &nbsp; cout << "a value: " << a << endl;<br>
+                | &nbsp; int b = a++;<br>
+                | &nbsp; cout << "b value after a++ : " << b << endl;<br>
+                | &nbsp; cout << "a value after a++ : " << a << endl;<br>
+                | &nbsp; // Pre increment<br>
+                | &nbsp; a = 1;<br>
+                | &nbsp; cout << "a value:" << a << endl;<br>
+                | &nbsp; b = ++a;<br>
+                | &nbsp; cout << "b value after ++a : " << b << endl;<br>
+                | &nbsp; cout << "a value after ++a : "<< a << endl;<br>
+                | &nbsp; // Post decrement<br>
+                | &nbsp; a = 5;<br>
+                | &nbsp; cout << "a value before decrement: " << a << endl;<br>
+                | &nbsp; b = a--;<br>
+                | &nbsp; cout << "b value after a-- : " << b << endl;<br>
+                | &nbsp; cout << "a value after a-- : " << a << endl;<br>
+                | &nbsp; // Pre decrement<br>
+                | &nbsp; a = 5;<br>
+                | &nbsp; cout << "a value: "<< a&laquo;endl;<br>
+                | &nbsp; b = --a;<br>
+                | &nbsp; cout << "b value after --a : " << b << endl;<br>
+                | &nbsp; cout << "a value after --a : " << a << endl;<br>
+                | &nbsp; return 0;<br>
+                | &nbsp;}<br>
+            </div>
+            <div class="codeout">
+                | a value: 1<br>
+                | b value after a++ : 1<br>
+                | a value after a++ : 2<br>
+                | a value:1<br>
+                | b value after ++a : 2<br>
+                | a value after ++a : 2<br>
+                | a value before decrement: 5<br>
+                | b value after a-- : 5<br>
+                | a value after a-- : 4<br>
+                | a value: 5<br>
+                | b value after --a : 4<br>
+                |a value after --a : 4<br>
+            </div>
+            The above program shows how the postfix and prefix works.<br><br>
+            <div class="subtitle"> NOT (!):</div><br>
+            It is used to reverse the logical state of its operand. If a condition is true, then
+            Logical NOT operator will make it false.
+            <div class="code">
+                | If x is true, then !x is false.<br>
+                | If x is false, then !x is true.<br>
+            </div><br>
+            <div class="subtitle">Addressof operator(&): </div><br>It gives an address of a variable. It is used to return the memory
+            address of a variable. These addresses returned by the address-of operator are known
+            as pointers because they “point” to the variable in memory.<br><br>
+            <div class="code">
+                | & gives an address on variable n<br>
+                | int a;<br>
+                | int *ptr;<br>
+                | ptr = &a; // address of a is copied to the location ptr.<br>
+            </div><br>
+            <div class="subtitle">sizeof(): </div><br>This operator returns the size of its operand, in bytes. The sizeof operator
+            always precedes its operand.The operand is an expression, or it may be a cast.<br><br>
+            <div class="code">
+                | #include &#60;iostream><br>
+                |     using namespace std;<br>
+                |     int main()<br>
+                |     {<br>
+                |      float n = 0;<br>
+                |      cout << "size of n: " << sizeof(n);<br>
+                |      return 1;<br>
+                |     }<br>
+            </div><br>
+            <div class="codeout">
+                | size of n: 4<br>
+            </div>
+        </div>
+        <div>
+            <h2>new AND delete OPERATORS: </h2><br>
+            C uses malloc() and calloc() function to allocate memory dynamically at run time and uses
+            free() function to free dynamically allocated memory. C++ supports these functions and also
+            has two operators new and delete that perform the task of allocating and freeing the
+            memory in a better and easier way.<br><br>
+            <div class="subtitle">new operator:</div><br>
+            The new operator denotes a request for memory allocation on the Free Store. If sufficient
+            memory is available, new operator initializes the memory and returns the address of the
+            newly allocated and initialized memory to the pointer variable.<br><br>
+            Syntax to use new operator: To allocate memory of any data type, the syntax is:<br><br>
+            <div class="code">
+                | pointer-variable = new data-type;<br>
+            </div><br>
+            Here, pointer-variable is the pointer of type data-type. Data-type could be any built-in data
+            type including array or any user defined data types including structure and class.<br><br>
+            <div class="code">
+                | // Pointer initialized with NULL<br>
+                | // Then request memory for the variable<br>
+                | int *p = NULL;<br>
+                | p = new int;<br>
+            </div>
+            <br>EXAMPLE: <br><br>
+            <div class="code">
+                | int *p = new int(25);<br>
+                | <br>
+                | float *q = new float(75.25);<br>
+                | <br>
+            </div>
+            <div class="subtitle">delete operator:</div><br>Since it is programmer’s responsibility to deallocate dynamically allocated memory,
+            programmers are provided delete operator by C++ language.<br>
+            <b>SYNTAX :</b><br><br>
+            <div class="code">
+                | delete pointer-variable;<br>
+            </div><br>
+            Here, pointer-variable is the pointer that points to the data object created by new.
+            <br><br>
+            <b>PROGRAM to illustrate the use of new and delete operator</b><br><br>
+            <div class="code">
+                | // C++ program to illustrate dynamic allocation<br>
+                | // and deallocation of memory using new and delete<br>
+                | #include &#60;iostream><br>
+                | using namespace std;<br>
+                | int main ()<br>
+                | {<br>
+                | &nbsp;// Pointer initialization to null<br>
+                | &nbsp;int* p = NULL;<br>
+                | &nbsp;// Request memory for the variable<br>
+                | &nbsp;// using new operator<br>
+                | &nbsp;p = new(nothrow) int;<br>
+                | if (!p)<br>
+                | &nbsp;&nbsp;cout << "allocation of memory failed\n";<br>
+                | else<br>
+                | {<br>
+                | &nbsp;&nbsp;// Store value at allocated address<br>
+                | &nbsp;&nbsp;*p = 29;<br>
+                | &nbsp;&nbsp;cout << "Value of p: " << *p << endl;<br>
+                | }<br>
+                | &nbsp;// Request block of memory<br>
+                | &nbsp;// using new operator<br>
+                | &nbsp;float *r = new float(75.25);<br>
+                | &nbsp;cout << "Value of r: " << *r << endl;<br>
+                | &nbsp;// Request block of memory of size n<br>
+                | &nbsp;int n = 5;<br>
+                | &nbsp;int *q = new(nothrow) int[n];<br>
+                | &nbsp;if (!q)<br>
+                | &nbsp;&nbsp;cout << "allocation of memory failed\n";<br>
+                | &nbsp;else<br>
+                | &nbsp;{<br>
+                |  &nbsp;&nbsp;for (int i = 0; i < n; i++)<br>
+                |     &nbsp;&nbsp;&nbsp;q[i] = i+1;<br>
+                |     &nbsp;&nbsp;&nbsp;cout << "Value store in block of memory: ";<br>
+                |    &nbsp;&nbsp;for (int i = 0; i < n; i++)<br>
+                |    &nbsp;&nbsp;&nbsp;cout << q[i] << " ";<br>
+                |    &nbsp;&nbsp;}<br>
+                |    &nbsp;&nbsp;// freed the allocated memory<br>
+                |    &nbsp;delete p;<br>
+                |    &nbsp;delete r;<br>
+                |    &nbsp;// freed the block of allocated memory<br>
+                |    &nbsp;delete[] q;<br>
+                |   &nbsp; return 0;<br>
+                |    }<br>
+            </div>           
+               <div class="codeout">
+                | Value of p: 29<br>
+                | Value of r: 75.25<br>
+                 | Value store in block of memory: 1 2 3 4 5<br>
+               </div> 
+        </div>
+        <a href="cpp00500.html" class="previous" >&laquo Previous</a>
+        <a href="cpp00700.html" class="next" style="float: right;">Next &raquo</a>
+        </div>
+        <div class="btn"><a href="#" id="terminal_btn" >JUMP TO TERMINAL</a></div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

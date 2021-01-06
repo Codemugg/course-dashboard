@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:src" content="assets/images/index-meta.png" />
+    <meta property="og:image" content="assets/images/index-meta.png" />
+    <meta
+      name="twitter:title"
+      content="Codemugg - Learning Without A Price Tag"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/codemugg-logo-white-1.png"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Codemugg is a non-profit organization that aims to provide free courses on programming being said that learning should never come with a price."
+    />
+    <title>Codemugg Course Template</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" >
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <style>
+      .btn{
+        width: 100%;
+        text-align: center;
+        padding-top: 100px;
+      }
+      #terminal_btn{
+        padding: 10px;
+         background-color: #232323;
+        color:#ec3750;
+        text-align: center;
+      }
+     </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h2>Codemugg Inc</h2>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-address-book"></i>Contact</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-pencil-alt"></i>Courses</a>
+          </li>
+          <li>
+            <a id="donation" href="#"
+              ><i class="fas fa-donate"></i><b>Donate</b></a
+            >
+          </li>
+        </ul>
+        <br />
+        <hr />
+        <ul>
+          <li><a href="cpp00100.html">Chapter 1</a></li>
+          <li><a href="cpp00200.html">Chapter 2</a></li>
+          <li><a href="cpp00300.html">Chapter 3</a></li>
+          <li><a href="cpp00400.html">Chapter 4</a></li>
+          <li><a href="cpp00500.html">Chapter 5</a></li>
+          <li><a href="cpp00600.html">Chapter 6</a></li>
+          <li><a href="cpp00700.html">Chapter 7</a></li>
+          <li><a href="cpp00800.html">Chapter 8</a></li>
+          <li><a href="cpp00801.html">Chapter 9</a></li>
+          <li><a href="cpp00900.html">Chapter 10</a></li>
+        </ul>
+        <div>
+          <h5>Copyright 2021 - Codemugg Inc.<br />All Rights Reserved.</h5>
+        </div>
+        <div class="social_media">
+          <a href="https://facebook.com/codemugg" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/codemugg" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com/code.mugg" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://discord.gg/6YtH2j8cGe" target="_blank"
+            ><i class="fab fa-discord"></i
+          ></a>
+        </div>
+      </div>
+      <div class="main_content">
+        <div class="header">C++ BEGINNERS COURSE BY CODEMUGG</div>
+        <div class="info">
+          <div>
+            <h2>LOOPS IN C & C++ :</h2><br />
+            Loops in programming come into use when we need to repeatedly execute a block of
+            statements. <br>
+            In Loop, the statement needs to be written only once and the loop will be executed number of 
+            times as shown below.<br>
+            In computer programming, a loop is a sequence of instructions that is repeated until a
+            certain condition is reached.<br><br>
+          </div>
+          <div>
+            <h2> FOR LOOP : </h2><br>
+            A for loop is a repetition control structure which allows us to write a loop that is executed
+            a specific number of times. The loop enables us to perform n number of steps together
+            in one line.<br><br>
+            <div class="code">
+                | for (initialization expr; test expr; update expr)<br>
+                | {<br>
+                | &nbsp; // body of the loop<br>
+                | &nbsp; // statements we want to execute<br>
+                | }<br>
+                
+            </div>
+            In for loop, a loop variable is used to control the loop. First initialize this loop variable to
+            some value, then check whether this variable is less than or greater than counter value.<br>
+            If statement is true, then loop body is executed and loop variable gets updated . Steps
+            are repeated till exit condition comes.<br><br>
+            ● <b>Initialization Expression:</b> In this expression we have to initialize the loop
+            counter to some value.<br> For example: int i=1;<br>
+            ● <b>Test Expression:</b> In this expression we have to test the condition. If the
+            condition evaluates to true then we will execute the body of loop and go to
+            update expression otherwise we will exit from the for loop.<br> For example: i <=
+            10;<br>
+            ● <b>Update Expression:</b> After executing loop body this expression
+            increments/decrements the loop variable by some value.<br> For example: i++;<br><br>
+            <b>For Loop:</b><br><br>
+            <div class="code">
+                | // C++ program to illustrate for loop<br>
+                | #include &#60; iostream><br>
+                | using namespace std;<br>
+                | int main()<br>
+                | {<br>
+                |  &nbsp; for (int i = 1; i <= 5; i++)<br>
+                |  &nbsp;{<br>
+                |     &nbsp;&nbsp; cout << "Hello World\n";<br>
+                |     &nbsp;}<br>
+                | return 0;<br>
+                | }<br>
+            </div>
+            <div class="codeout">
+                | Hello World<br>
+                | Hello World<br>
+                | Hello World<br>
+                | Hello World<br>
+                | Hello World<br>
+            </div>
+          </div>
+          <div>
+            <h2> WHILE LOOP : </h2><br>
+            While studying for loop we have seen that the number of iterations is known
+            beforehand, i.e. the number of times the loop body is needed to be executed is known
+            to us. while loops are used in situations where we do not know the exact number of
+            iterations of loop beforehand. The loop execution is terminated on the basis of test
+            condition.
+            <br><br>
+            <b>Syntax: </b><br><br>
+            <div class="code">
+                | initialization expression;<br>
+                | while (test_expression)<br>
+                | {<br>
+                | &nbsp; // statements<br>
+                | &nbsp; update_expression;<br>
+                | }<br>
+            </div>
+            <br>
+            Following program illustrates eample of While Loop.<br><br>
+            <div class="code">
+                | // C++ program to illustrate while loop<br>
+                | #include &#60; iostream><br>
+                | using namespace std;<br>
+                | int main()<br>
+                | {<br>
+                |  &nbsp; // initialization expression<br>
+                |  &nbsp; int i = 1;<br>
+                |  &nbsp; // test expression<br>
+                |  &nbsp; while (i < 6)<br>
+                |  &nbsp; {<br>
+                |  &nbsp;  &nbsp; cout << "Hello World\n";<br>
+                |  &nbsp;  &nbsp; // update expression<br>
+                |  &nbsp;  &nbsp; i++;<br>
+                |  &nbsp; }<br>
+                |  return 0;<br>
+                | }<br>
+            </div>
+            <div class="codeout">
+                | Hello World<br>
+                | Hello World<br>
+                | Hello World<br>
+                | Hello World<br>
+                | Hello World<br>
+            </div>
+          </div>
+          <div>
+            <h2> DO WHILE LOOP : </h2><br>
+            In do while loops also the loop execution is terminated on the basis of test condition.
+            The main difference between do while loop and while loop is in do while loop the
+            condition is tested at the end of loop body, i.e do while loop is exit controlled whereas
+            the other two loops are entry controlled loops.<br><br>
+            <b>Note:</b> In do while loop the loop body will execute at least once irrespective of test
+            condition.
+
+            <br><br>
+            <b>Syntax: </b><br><br>
+            <div class="code">
+                | initialization expression;<br>
+                | do<br>
+                | {<br>
+                | // statements<br>
+                | update_expression;<br>
+                | } while (test_expression);<br>
+            </div><br>
+            <b>Note: </b>Notice the semi – colon(“;”) in the end of loop.
+
+            <br>
+            Following program illustrates eample of Do-While Loop.<br><br>
+            <div class="code">
+                | // C++ program to illustrate do-while loop<br>
+                | #include &#60; iostream><br>
+                | using namespace std;<br>
+                | int main()<br>
+                | {<br>
+                |  &nbsp; // initialization expression<br>
+                |  &nbsp; int i = 2;<br>
+                |  &nbsp; do <br>
+                |  &nbsp; {<br>
+                |  &nbsp;  &nbsp; cout << "Hello World\n";<br>
+                |  &nbsp;  &nbsp; // update expression<br>
+                |  &nbsp;  &nbsp; i++;<br>
+                |  &nbsp; }while(i&#60;1);<br>
+                |  return 0;<br>
+                | }<br>
+            </div>
+            <div class="codeout">
+                | Hello World<br>
+            </div>
+            In the above program the test condition (i&#60;1) evaluates to false. But still as the loop is
+            exit – controlled the loop body will execute once.
+          </div>
+          <div>
+              <div class="subtitle">More Advanced Looping Techniques: </div><br>
+              ● Range-based for loop in C++<br>
+              ● for_each loop in C++<br><br>
+              <div class="subtitle">Important Points:</div>
+              ● Use for loop when number of iterations is known beforehand, i.e. the
+                number of times the loop body is needed to be executed is known.<br>
+            ● Use while loops where the exact number of iterations is not known but the
+            loop termination condition is known.<br>
+            ● Use do while loop if the code needs to be executed at least once like in
+            Menu driven programs.<br>
+          </div>
+          <a href="cpp00200.html" class="previous" >&laquo Previous</a>
+          <a href="cpp00400.html" class="next" style="float: right;">Next &raquo</a>
+            
+          </div>
+          <div class="btn"><a href="#" id="terminal_btn" >JUMP TO TERMINAL</a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
