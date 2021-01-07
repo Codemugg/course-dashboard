@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:src" content="assets/images/index-meta.png" />
+    <meta property="og:image" content="assets/images/index-meta.png" />
+    <meta
+      name="twitter:title"
+      content="Codemugg - Learning Without A Price Tag"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/codemugg-logo-white-1.png"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Codemugg is a non-profit organization that aims to provide free courses on programming being said that learning should never come with a price."
+    />
+    <title>Codemugg Course Template</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" >
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <style>
+      .btn{
+        width: 100%;
+        text-align: center;
+        padding-top: 100px;
+      }
+      #terminal_btn{
+        padding: 10px;
+         background-color: #232323;
+        color:#ec3750;
+        text-align: center;
+      }
+     </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h2>Codemugg Inc</h2>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-address-book"></i>Contact</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-pencil-alt"></i>Courses</a>
+          </li>
+          <li>
+            <a id="donation" href="#"
+              ><i class="fas fa-donate"></i><b>Donate</b></a
+            >
+          </li>
+        </ul>
+        <br />
+        <hr />
+        <ul>
+          <li><a href="cpp00100.html">Chapter 1</a></li>
+          <li><a href="cpp00200.html">Chapter 2</a></li>
+          <li><a href="cpp00300.html">Chapter 3</a></li>
+          <li><a href="cpp00400.html">Chapter 4</a></li>
+          <li><a href="cpp00500.html">Chapter 5</a></li>
+          <li><a href="cpp00600.html">Chapter 6</a></li>
+          <li><a href="cpp00700.html">Chapter 7</a></li>
+          <li><a href="cpp00800.html">Chapter 8</a></li>
+          <li><a href="cpp00801.html">Chapter 9</a></li>
+          <li><a href="cpp00900.html">Chapter 10</a></li>
+        </ul>
+        <div>
+          <h5>Copyright 2021 - Codemugg Inc.<br />All Rights Reserved.</h5>
+        </div>
+        <div class="social_media">
+          <a href="https://facebook.com/codemugg" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/codemugg" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com/code.mugg" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://discord.gg/6YtH2j8cGe" target="_blank"
+            ><i class="fab fa-discord"></i
+          ></a>
+        </div>
+      </div>
+      <div class="main_content">
+        <div class="header">C++ BEGINNERS COURSE BY CODEMUGG</div>
+        <div class="info">
+          <div>
+            <h2>I/O REDIRECTION in C++ :</h2><br />
+            C++ being an object-oriented programming language gives us the ability to not only
+            define our own streams but also redirect standard streams. Thus in C++, a stream is an
+            object whose behavior is defined by a class. Thus anything that behaves like a stream
+            is also a stream.  <br><br>
+            Streams Objects in C++ are mainly of three types :<br><br>
+            ● istream : Stream object of this type can only perform input operations from
+            the stream.<br>
+            ● ostream : These objects can only be used for output operations.<br>
+            ● iostream : Can be used for both input and output operations.<br><br>
+            C++ allows us to set the stream buffer for any stream. So the task of redirecting the
+            stream simply reduces to changing the stream buffer associated with the stream. Thus
+            the to redirect a Stream A to Stream B we need to do.<br>
+            1. Get the stream buffer of A and store it somewhere.<br>
+            2. Set the stream buffer of A to the stream buffer of B.<br>
+            3. If needed reset the stream buffer of A to its previous stream buffer.<br><br>
+            We can use the function <b>ios::rdbuf()</b> to perform two opeations.<br><br>
+            <div class="code">
+                | 1) stream_object.rdbuf(): Returns pointer to the stream buffer of
+                stream_object<br><br>
+                | 2) stream_object.rdbuf(streambuf * p): Sets the stream buffer to the
+                object pointed by p<br><br>
+            </div>
+            Here is an example program below to show the steps<br><br>
+            <div class="code">
+            | // Cpp program to redirect cout to a file<br>
+            | #include &#60;fstream><br>
+            | #include &#60;iostream><br>
+            | #include &#60;string><br>
+            | using namespace std;<br>
+            | int main()<br>
+            | {<br>
+            | &nbsp; fstream file;<br>
+            | &nbsp; file.open("cout.txt", ios::out);<br>
+            | &nbsp; string line;<br>
+            | &nbsp; // Backup streambuffers of cout<br>
+            | &nbsp; streambuf* stream_buffer_cout = cout.rdbuf();<br>
+            | &nbsp; streambuf* stream_buffer_cin = cin.rdbuf();<br>
+            | &nbsp; // Get the streambuffer of the file<br>
+            | &nbsp; streambuf* stream_buffer_file = file.rdbuf();<br>
+            | &nbsp; // Redirect cout to file<br>
+            | &nbsp; cout.rdbuf(stream_buffer_file);<br>
+            | &nbsp; cout << "This line written to file" << endl;<br>
+            | &nbsp; // Redirect cout back to screen<br>
+            | &nbsp; cout.rdbuf(stream_buffer_cout);<br>
+            | &nbsp; cout << "This line is written to screen" << endl;<br>
+            | &nbsp; file.close();<br>
+            | &nbsp; return 0;<br>
+            | }<br>
+          </div>
+          <div class="codeout">
+            | This line is written to screen<br>
+            | Contents of file cout.txt:<br>
+            | This line written to file<br>
+          </div>
+        </div>
+        <div>
+            <h2> BASIC INPUT/OUTPUT IN C++ :</h2><br />
+            C++ comes with libraries that provide us with many ways for performing input and
+            output. In C++ input and output are performed in the form of a sequence of bytes or
+            more commonly known as streams.<BR><BR>
+            ● Input Stream: If the direction of flow of bytes is from the device(for example,
+            Keyboard) to the main memory then this process is called input.<br>
+            ● Output Stream: If the direction of flow of bytes is opposite, i.e. from main
+            memory to device( display screen ) then this process is called output.
+            <br><br>
+            The two keywords cout and cin in C++ are used very often for printing outputs
+            and taking inputs respectively. These two are the most basic methods of taking input
+            and printing output in C++. To use cin and cout in C++ one must include the header file
+            iostream in the program.<br><br>
+            Standard output stream (cout): Usually the standard output device is the display screen.
+            The data
+            needed to be displayed on the screen is inserted in the standard output stream (cout)
+            using the insertion operator(<<).<br><br>
+            <div class="code">
+            | #include &#60;iostream><br>
+            | using namespace std;<br>
+            | int main()<br>
+            | {<br>
+            | &nbsp; char sample[] = "Codemugg";<br>
+            | &nbsp; cout << sample << " - A computer science portal for  Coders";<br>
+            | &nbsp;  return 0;<br>
+            |    }<br>
+          </div>
+          <div class="codeout">
+            | Codemugg - A computer science portal for Coders<br>
+          </div>
+          In the above program the insertion operator(<<) inserts the value of the string variable
+            sample followed by the string “<b>A computer science portal for Coders</b>” in the standard
+            output stream cout which is then displayed on screen.<br><br>
+            standard input stream (cin): Usually the input device in a computer is the
+            keyboard.The extraction operator(>>) is used along with the object cin for reading inputs.<br><br>
+            <div class="code">
+                | #include &#60; iostream><br>
+                | using namespace std;<br>
+                | int main()<br>
+                |    {<br>
+                |   &nbsp;  int age;<br>
+                |   &nbsp;  cout << "Enter your age:";<br>
+                |   &nbsp;  cin >> age;<br>
+                |   &nbsp;  cout << "\nYour age is: " << age;<br>
+                |   &nbsp;  return 0;<br>
+                |   &nbsp; }<br>
+            </div>
+            <div class = 'codeout'>
+                | Enter your age: 18<br>
+                | Your age is: 18<br>
+            </div>
+        </div>
+          <a href="cpp00400.html" class="previous" >&laquo Previous</a>
+          <a href="cpp00600.html" class="next" style="float: right;">Next &raquo</a>
+            
+          </div>
+          <div class="btn"><a href="#" id="terminal_btn" >JUMP TO TERMINAL</a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

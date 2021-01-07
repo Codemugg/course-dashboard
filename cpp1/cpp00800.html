@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:src" content="assets/images/index-meta.png" />
+    <meta property="og:image" content="assets/images/index-meta.png" />
+    <meta
+      name="twitter:title"
+      content="Codemugg - Learning Without A Price Tag"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/codemugg-logo-white-1.png"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Codemugg is a non-profit organization that aims to provide free courses on programming being said that learning should never come with a price."
+    />
+    <title>Codemugg Course Template</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" >
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <style>
+      .btn{
+        width: 100%;
+        text-align: center;
+        padding-top: 100px;
+      }
+      #terminal_btn{
+        padding: 10px;
+         background-color: #232323;
+        color:#ec3750;
+        text-align: center;
+      }
+     </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h2>Codemugg Inc</h2>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-address-book"></i>Contact</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-pencil-alt"></i>Courses</a>
+          </li>
+          <li>
+            <a id="donation" href="#"
+              ><i class="fas fa-donate"></i><b>Donate</b></a
+            >
+          </li>
+        </ul>
+        <br />
+        <hr />
+        <ul>
+          <li><a href="cpp00100.html">Chapter 1</a></li>
+          <li><a href="cpp00200.html">Chapter 2</a></li>
+          <li><a href="cpp00300.html">Chapter 3</a></li>
+          <li><a href="cpp00400.html">Chapter 4</a></li>
+          <li><a href="cpp00500.html">Chapter 5</a></li>
+          <li><a href="cpp00600.html">Chapter 6</a></li>
+          <li><a href="cpp00700.html">Chapter 7</a></li>
+          <li><a href="cpp00800.html">Chapter 8</a></li>
+          <li><a href="cpp00801.html">Chapter 9</a></li>
+          <li><a href="cpp00900.html">Chapter 10</a></li>
+        </ul>
+        <div>
+          <h5>Copyright 2021 - Codemugg Inc.<br />All Rights Reserved.</h5>
+        </div>
+        <div class="social_media">
+          <a href="https://facebook.com/codemugg" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/codemugg" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com/code.mugg" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://discord.gg/6YtH2j8cGe" target="_blank"
+            ><i class="fab fa-discord"></i
+          ></a>
+        </div>
+      </div>
+      <div class="main_content">
+        <div class="header">C++ BEGINNERS COURSE BY CODEMUGG</div>
+        <div class="info">
+            <div>
+                <h2>FUNCTIONS IN C++:</h2><br>
+                A function is a set of statements that take inputs, do some specific computation and
+                produces output.<br><br>
+                The idea is to put some commonly or repeatedly done task together and make a
+                function so that instead of writing the same code again and again for different inputs, we
+                can call the function.<br><br>
+                The general form of a function is:<br><br>
+                <div class="code">
+                    | return_type function_name([ arg1_type arg1_name, ... ]) { code }
+                </div>
+                <b>Example:</b>
+                Below is a simple C/C++ program to demonstrate functions.<br><br>
+                <div class="code">
+                    | #include &#60;iostream><br>
+                    | using namespace std;<br>
+                    | int max(int x, int y)<br>
+                    | &nbsp;{<br>
+                    | &nbsp;if (x > y)<br>
+                    | &nbsp;&nbsp;return x;<br>
+                    | &nbsp;else<br>
+                    | &nbsp;&nbsp;return y;<br>
+                    | &nbsp;}<br>
+                    | int main() {<br>
+                    | &nbsp;int a = 10, b = 20;<br>
+                    | &nbsp;// Calling above function to find max of 'a' and 'b'<br>
+                    | &nbsp;int m = max(a, b);<br>
+                    | &nbsp;cout << "m is " << m;<br>
+                    | &nbsp;return 0;<br>
+                    |  }<br>
+                </div>
+                <div class="codeout">
+                    | m is 20<br>
+                </div>
+            </div>
+            <div>
+                <h2>WHY DO WE NEED FUNCTIONS..?</h2><br>
+                ● Functions help us in reducing code redundancy. If functionality is performed
+                at multiple places in software, then rather than writing the same code, again
+                and again, we create a function and call it everywhere. This also helps in
+                maintenance as we have to change at one place if we make future changes
+                to the functionality.<br><br>
+                ● Functions make code modular. Consider a big file having many lines of
+                codes. It becomes really simple to read and use the code if the code is
+                divided into functions.<br><br>
+                ● Functions provide abstraction. For example, we can use library functions
+                without worrying about their internal working.<br><br>
+            </div>
+            <div>
+                <h2>FUNCTIONS: </h2><br>
+                <div class="subtitle">Function Declaration :</div>
+                A function declaration tells the compiler about the number of parameters function takes,
+                data-types of parameters and return type of function. Putting parameter names in
+                function declaration is optional in the function declaration, but it is necessary to put them
+                in the definition.<br>
+                 Below are an example of function declarations. (parameter names are
+                not there in below declarations)<br><br>
+                <div class="code">
+                    | // A function that takes two integers as parameters<br>
+                    | // and returns an integer<br>
+                    | int max(int, int);<br>
+                    | // A function that takes a int pointer and an int variable as parameters<br>
+                    | // and returns an pointer of type int<br>
+                    | int *swap(int*,int);<br>
+                    | // A function that takes a charas parameters<br>
+                    | // and returns an reference variable<br>
+                    | char *call(char b);<br>
+                    | // A function that takes a char and an int as parameters<br>
+                    | // and returns an integer<br>
+                    | int fun(char, int);<br>
+                </div>
+                <div class="subtitle">Parameter Passing to functions :</div>
+                The parameters passed to function are called <b>actual parameters</b>. For example, in the
+                above program 10 and 20 are actual parameters.<br>
+                The parameters received by function are called<b> formal parameters</b> . For example, in the
+                above program x and y are formal parameters.<br><br>
+                There are two most popular ways to pass parameters.<br><br>
+                <b><i>Pass by Value :</i></b> In this parameter passing method, values of actual parameters are
+                copied to function’s formal parameters and the two types of parameters are stored in
+                different memory locations. So any changes made inside functions are not reflected in
+                actual parameters of caller.<br><br>
+                <b><i>Pass by Reference : </i></b>Both actual and formal parameters refer to same locations, so any
+                changes made inside the function are actually reflected in actual parameters of caller.
+                Parameters are always passed by value in C. For example. in the below code, value of
+                x is not modified using the function fun().<br><br>
+                <div class="code">
+                    | #include &#60;iostream><br>
+                    | using namespace std;<br>
+                    | void fun(int x) {<br>
+                    |     &nbsp;x = 30;<br>
+                    | }<br>
+                    | int main() {<br>
+                    |  &nbsp;int x = 20;<br>
+                    |  &nbsp;fun(x);<br>
+                    |  &nbsp;cout << "x = " << x;<br>
+                    |  &nbsp;return 0;<br>
+                    | }<br>
+                </div>
+                <div class="codeout">
+                    | x = 20
+                </div>
+                <div class="subtitle">Main Function :</div><br>
+                The main function is a special function. Every C++ program must contain a function
+                named main. It serves as the entry point for the program. The computer will start
+                running the code from the beginning of the main function.<br><br>
+                <div class="subtitle">Types of Main Function: </div><br>
+                1) The first type is – main function without parameters :
+                <br><br>
+                <div class="code">
+                    | // Without Parameters<br>
+                    | int main()<br>
+                    | {<br>
+                    | &nbsp;...<br>
+                    | &nbsp;return 0;<br>
+                    | }<br>
+                </div>
+                2) Second type is main function with parameters :<br><br>
+                <div class="code">
+                    | //// With Parameters<br>
+                    | int main(int argc, char * const argv[])<br>
+                    | {<br>
+                    | &nbsp;...<br>
+                    | &nbsp;return 0;<br>
+                    | }<br>
+                </div>
+                <i>The reason for having the parameter option for the main function is to allow input from
+                the command line.</i>
+            </div>
+            <div>
+                <h2>INLINE FUNCTION :</h2><br>
+                Inline function is one of the important feature of C++. So, let’s first understand why
+                inline functions are used and what is the purpose of inline function?<br><br>
+                C++ provides an inline functions to reduce the function call overhead. Inline function is
+                a function that is expanded in line when it is called. When the inline function is called
+                whole code of the inline function gets inserted or substituted at the point of inline
+                function call. This substitution is performed by the C++ compiler at compile time. Inline
+                function may increase efficiency if it is small.<br><br>
+                The syntax for defining the function inline is:<br><br>
+                <div class="code">
+                    | inline return-type function-name(parameters)<br>
+                    | {<br>
+                    |   &nbsp; // function code<br>
+                    | }<br>
+                </div><br><br>
+                Remember, inlining is only a request to the compiler, not a command. Compiler can
+                ignore the request for inlining. Compiler may not perform inlining in such
+                circumstances like:<br><br>
+                1) If a function contains a loop. (for, while, do-while)<br>
+                2) If a function contains static variables.<br>
+                3) If a function is recursive.<br>
+                4) If a function return type is other than void, and the return statement doesn’t exist in
+                function body.<br>
+                5) If a function contains switch or goto statement.<br><br>
+                The following program demonstrates the use of use of inline function.<br><br>
+              <div class="code">
+                | #include &#60;iostream><br>
+                |  using namespace std;<br>
+                |  inline int cube(int s)<br>
+                |  {<br>
+                |  &nbsp; return s*s*s;<br>
+                |  }<br>
+                |  int main()<br>
+                |  {<br>
+                |  &nbsp; cout << "The cube of 3 is: " << cube(3) << "\n";<br>
+                |  &nbsp; return 0;<br>
+                |  }<br>
+              </div>
+              <div class="codeout">
+                | The cube of 3 is: 27<br>
+              </div>
+            </div>
+            <a href="cpp00700.html" class="previous" >&laquo Previous</a>
+            <a href="cpp00801.html" class="next" style="float: right;">Next &raquo</a>
+        </div>
+
+        <div class="btn"><a href="#" id="terminal_btn" >JUMP TO TERMINAL</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

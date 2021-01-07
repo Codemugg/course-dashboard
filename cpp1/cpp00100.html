@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:src" content="assets/images/index-meta.png" />
+    <meta property="og:image" content="assets/images/index-meta.png" />
+    <meta
+      name="twitter:title"
+      content="Codemugg - Learning Without A Price Tag"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/codemugg-logo-white-1.png"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Codemugg is a non-profit organization that aims to provide free courses on programming being said that learning should never come with a price."
+    />
+    <title>Codemugg Course Template</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" >
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <style>
+     .btn{
+       width: 100%;
+       text-align: center;
+       padding-top: 100px;
+     }
+     #terminal_btn{
+       padding: 10px;
+        background-color: #232323;
+       color:#ec3750;
+       text-align: center;
+     }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h2>Codemugg Inc</h2>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-address-book"></i>Contact</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-pencil-alt"></i>Courses</a>
+          </li>
+          <li>
+            <a id="donation" href="#"
+              ><i class="fas fa-donate"></i><b>Donate</b></a
+            >
+          </li>
+        </ul>
+        <br />
+        <hr />
+        <ul>
+          <li><a href="cpp00100.html">Chapter 1</a></li>
+          <li><a href="cpp00200.html">Chapter 2</a></li>
+          <li><a href="cpp00300.html">Chapter 3</a></li>
+          <li><a href="cpp00400.html">Chapter 4</a></li>
+          <li><a href="cpp00500.html">Chapter 5</a></li>
+          <li><a href="cpp00600.html">Chapter 6</a></li>
+          <li><a href="cpp00700.html">Chapter 7</a></li>
+          <li><a href="cpp00800.html">Chapter 8</a></li>
+          <li><a href="cpp00801.html">Chapter 9</a></li>
+          <li><a href="cpp00900.html">Chapter 10</a></li>
+        </ul>
+        <div>
+          <h5>Copyright 2021 - Codemugg Inc.<br />All Rights Reserved.</h5>
+        </div>
+        <div class="social_media">
+          <a href="https://facebook.com/codemugg" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/codemugg" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com/code.mugg" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://discord.gg/6YtH2j8cGe" target="_blank"
+            ><i class="fab fa-discord"></i
+          ></a>
+        </div>
+      </div>
+      <div class="main_content">
+        <div class="header">C++ BEGINNERS COURSE BY CODEMUGG</div>
+        <div class="info">
+          <div>
+            <h2>INTRODUCTION :</h2><br />
+            C++ is a general-purpose programming language and widely used nowadays for
+            competitive programming. It has imperative, object-oriented and generic programming
+            features.<br><br>
+            C++ runs on lots of platforms like Windows, Linux, Unix, Mac, etc. Before we start
+            programming with C++. We will need an environment to be set-up on our local computer
+            to compile and run our C++ programs successfully. If you do not want to set up a local
+            environment you can also use online IDEs for compiling your program.<br><br>
+          </div>
+          <div>
+            <h2>SETTING UP LOCAL ENVIRONMENT: </h2><br>
+            For setting up your own personal development environment on your local machine you
+            need to install two important softwares:<br><br>
+          </div>
+          <div>
+
+            <div class="subtitle">
+              <b>Text Editor: </b> 
+            </div><br>
+            Text Editors are types of programs used to edit or write texts.
+            We will use text-editors to type our C++ programs. The normal extension of
+            a text file is (.txt) but a text file containing C++ program should be saved
+            with ‘.CPP’ or ‘.C’ extension. Files ending with the extension ‘.CPP’ and ‘.C’
+            are called source code files and they are supposed to contain source code
+            written in C++ programming language. This extension helps the compiler to
+            identify that the file contains a C++ program.<br>
+            Before beginning programming with C++, one must have a text-editor
+            installed to write programs.<br><br>
+            <div class="subtitle">
+              <b>C++ Compiler: </b> 
+            </div><br>
+            Once you have installed text-editor and typed and save your
+            program in a file with ‘.CPP’ extension, you will need a C++ compiler to
+            compile this file. A compiler is a computer program which converts
+            high-level language into machine understandable low-level language. In
+            other words, we can say that it converts the source code written in a
+            programming language into another computer language which the computer
+            understands. For compiling a C++ program we will need a C++ compiler
+            which will convert the source code written in C++ into machine codes.
+            Below are the details about setting up compiler on different platforms.
+            <br><br>
+          </div>
+          <div>
+            <h2>INSTALLATION: </h2><br>
+            <div class="subtitle">
+              <b>Linux Installation: </b> 
+            </div><br>
+            We will install the GNU GCC compiler on
+            Linux. To install and work with the GCC compiler on your Linux
+            machine, proceed according to below steps:<br>
+            You have to first run the below two commands from your Linux terminal window:<br><br>
+            <div class="code">
+              | sudo apt-get update<br>
+              | sudo apt-get install GCC<br>
+            </div>
+            This command will install the GCC compiler on your system. You may also run the
+            below command:
+            <div class="code">
+              | sudo apt-get install build-essential<br>
+            </div>
+            <i>This command will install all the libraries which are
+              required to compile and run a C++ program.</i><br><br>
+              After completing the above step, you should check whether the GCC compiler is
+              installed in your system correctly or not. To do this you have to run the below-given
+              command from Linux terminal:<br><br>
+              <div class="code">
+                | g++ --version<br>
+              </div>
+              <i>If you have completed the above two steps without
+              any errors, then your Linux environment is set up
+              and ready to be used to compile C++ programs. In
+              further steps, we will learn how to compile and run a
+              C++ program on Linux using GCC compiler.<br><br>
+              Write your program in a text file and save it with any
+              file name and.CPP extension. We have written a
+              program to display “Hello World” and saved it in a
+              file with the filename “helloworld.cpp” on desktop.</i><br><br>
+              Now you have to open the Linux terminal and move to the directory where you have
+              saved your file. Then you have to run the below command to compile your file:<br><br>
+              <div class="code">
+                | g++ filename.cpp -o any-name
+                <br>
+              </div>
+              <i>filename.cpp</i> is the name of your source code file. In our case, the name is
+              “helloworld.cpp” and any-name can be any name of your choice. This name will be
+              assigned to the executable file which is created by the compiler after compilation. In our
+              case, we choose any-name to be “hello”.<br><br>
+              <div class="code">
+                | g++ helloworld.cpp -o hello
+                <br>
+              </div>
+              After executing the above command, you will see a new file is created automatically in
+              the same directory where you have saved the source file and the name of this file is the
+              name you chose as any-name.<br>
+              Now to run your program you have to run the below command:<br><br>
+              <div class="code">
+                | ./hello
+                <br>
+              </div>
+              <i>This command will run your program in the terminal
+                window.</i><br><br>
+                <div class="subtitle">
+                  <b>Windows Installation: </b> 
+                </div><br>
+                There are lots of IDEs available for the
+                Windows operating system which you can use to work easily
+                with C++ programming language. One of the popular IDE is
+                <b><a href="http://www.codeblocks.org/downloads/26">Code::Blocks.</a></b>
+                Once you have downloaded the setup file of Code::Blocks
+                from the given link open it and follow the instruction to install.<br><br>
+                After successfully installing Code::Blocks, go to File
+                menu -> Select New and create an Empty file.<br>
+                Now write your C++ program in this empty file and
+                save the file with a ‘.cpp’ extension.<br>
+                After saving the file with ‘.cpp’ extension, go to the
+                Build menu and choose the Build and Run option.<br><br>
+                <div class="subtitle">
+                  <b>Mac OS X Installation: </b> 
+                </div><br>
+                If you are a Mac user,you have to
+                download Xcode. To download Xcode you have to visit the
+                apple website or you can search it on apple app store. 
+                You will find all the necessary install
+                instructions there.<br><br>
+                After successfully installing Xcode, open the Xcode
+                application.<br>
+                To create a new project. Go to File menu -> select
+                New -> select Project. This will create a new project
+                for you.<br>
+                Now in the next window you have to choose a
+                template for your project. To choose a C++ template
+                choose Application option which is under the OS X
+                section on the left side bar. Now choose
+                command-line tools from available options and hit
+                the Next button.<br>
+                On the next window provide all the necessary
+                details like ‘name of organisation’, ‘Product Name’
+                etc. But make sure to choose the language as C++ .
+                After filling the details hit the next button to proceed
+                to further steps.<br>
+                Choose the location where you want to save your
+                project. After this choose the main.cpp file from the
+                directory list on the left side-bar.<br>
+                Now after opening the main.cpp file, you will see a
+                pre written c++ program or template is provided.
+                You may change this program as per your
+                requirement. To run your C++ program you have to
+                go to the Product menu and choose the Run option
+                from the dropdown.
+              <br><br>
+
+          </div>
+         
+
+            <a href="cpp00200.html" class="next" style="float: right;">Next &raquo</a>
+            
+          </div>
+          <br><br>
+          <div class="btn"><a href="#" id="terminal_btn" >JUMP TO TERMINAL</a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
