@@ -178,10 +178,25 @@ th, td{
 
 /*Terminal*/
 iframe{
-  height: 300px;
+  position: fixed;
+  height: 400px;
+  cursor: row-resize;
+  bottom: 0;
   width: 100%;
 }
-
+.btn{
+  position: fixed;
+  height: 50px;
+  cursor: row-resize;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+#terminal_btn{
+  padding: 10px;
+   background-color: #232323;
+  color:#ec3750;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
