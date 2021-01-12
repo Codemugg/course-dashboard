@@ -180,6 +180,10 @@ th, td{
 iframe{
   height: 300px;
   width: 100%;
+  position: fixed;
+  height: 400px;
+  cursor: row-resize;
+  bottom: 0;
 }
 .btn{
   position: fixed;
@@ -196,13 +200,6 @@ iframe{
 
 }
 
-iframe{
-  height: 300px;	  position: fixed;
-  height: 400px;
-  cursor: row-resize;
-  bottom: 0;
-  width: 100%;	  width: 100%;
-}
 
 /* width */
 ::-webkit-scrollbar {
