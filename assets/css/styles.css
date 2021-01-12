@@ -179,7 +179,7 @@ th, td{
 /*Terminal*/
 iframe{
   position: fixed;
-  height: 400px;
+  height: 300px;
   cursor: row-resize;
   bottom: 0;
   width: 100%;
