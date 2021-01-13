@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:src" content="assets/images/index-meta.png" />
+    <meta property="og:image" content="assets/images/index-meta.png" />
+    <meta
+      name="twitter:title"
+      content="Codemugg - Learning Without A Price Tag"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/codemugg-logo-white-1.png"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Codemugg is a non-profit organization that aims to provide free courses on programming being said that learning should never come with a price."
+    />
+    <title>Codemugg Course Template</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" >
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h2>Codemugg Inc</h2>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-address-book"></i>Contact</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-pencil-alt"></i>Courses</a>
+          </li>
+          <li>
+            <a id="donation" href="#"
+              ><i class="fas fa-donate"></i><b>Donate</b></a
+            >
+          </li>
+        </ul>
+        <br />
+        <hr />
+        <ul>
+          <li><a href="hc00100.html">Chapter 1</a></li>
+          <li><a href="hc00200.html">Chapter 2</a></li>
+          <li><a href="hc00300.html">Chapter 3</a></li>
+          <li><a href="hc00400.html">Chapter 4</a></li>
+          <li><a href="hc00500.html">Chapter 5</a></li>
+          <li><a href="hc00600.html">Chapter 6</a></li>
+          <li><a href="hc00700.html">Chapter 7</a></li>
+          <li><a href="hc00800.html">Chapter 8</a></li>
+          <li><a href="hc00900.html">Chapter 9</a></li>
+          <li><a href="hc001000.html">Chapter 10</a></li>
+        </ul>
+        <div>
+          <h5>Copyright 2021 - Codemugg Inc.<br />All Rights Reserved.</h5>
+        </div>
+        <div class="social_media">
+          <a href="https://facebook.com/codemugg" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/codemugg" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com/code.mugg" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://discord.gg/6YtH2j8cGe" target="_blank"
+            ><i class="fab fa-discord"></i
+          ></a>
+        </div>
+      </div>
+      <div class="main_content">
+        <div class="header">HTML AND CSS COURSE FOR BEGINNERS..!</div>
+        <div class="info">
+            <div>
+                <h2>HTML IMAGES: </h2><br>
+                <div class="subtitle">1. Inserting Images in HTML Document: </div><br>
+                In HTML, images are defined with the &#60;img> tag. The syntax of &#60;img> tag can be given with:<br><br>
+                <div class="code">
+                    | &#60;img src="path_of_image" alt="Some_text" />
+                </div>
+                <br>
+                <i><b>src</b></i> : The '<i>src</i>' attribute contains a path pointing to the image which is to be inserted 
+                into the page.<br><br>
+                <i><b>alt</b></i> : The '<i>alt</i>' attribute is a mandatory attribute which specifies an alternate
+                 text for an image, if the image cannot be displayed.<br><br>
+                <div class="code">
+                    | &#60;head&#62;<br>
+                    | &#60;/head&#62;<br>
+                    | &#60;body&#62;<br>
+                    | &#60;img src="Nature.png" alt="Nature_Pic" /><br>
+                    | &#60;/body&#62;<br>
+                  </div>
+                  <div class="codeout" style="padding: 10px;">
+                    <div class="img">
+                        <img src="img/island.png" alt="Nature_Pic" />
+                    </div>
+                  </div>
+                <br><br>
+                Now, Let's use some css styling to modify our image: <br><br>
+                </div>
+                <div>
+                    <h2>CSS IMAGE:</h2><br>
+                    <div class="subtitle">RESPONSIVE IMAGE</div><br>
+                    If you want an image to scale down if it has to, but never scale up to be larger than its original size, add the following:<br><br>
+                    <div class="code">
+                        | img{<br>
+                        | &nbsp; max-width: 100%;<br>
+                        | &nbsp; height: auto; <br>
+                        | } <br>
+                    </div>
+                    <div class="codeout" style="padding: 10px;">
+                        <img src="img/island.png" alt="Nature_Pic" style="width: 100%; height: auto;"/>
+                  </div>
+                  <br>
+                  <div class="subtitle">IMAGE BORDER</div><br>
+                  You can set a border around an image by using <b>border</b> property.<br><br>
+                  <div class="code">
+                    | img{<br>
+                    | &nbsp; border: solid #000000 5px;<br>
+                    | } <br>
+                </div>
+                <div class="codeout" style="padding: 10px;">
+                    <div class="img">
+                    <img src="img/island.png" alt="Nature_Pic" style="border: solid #000000 5px;"/>
+                    </div>
+                </div><br><br>
+                <div class="subtitle">ROUNDED IMAGE</div><br>
+                You can use <b>border-radius</b> property to make rounded images. <br><br>
+                
+                <div>
+                <div class="code">
+                  | img{<br>
+                  | &nbsp; border-radius: 50px;<br>
+                  | } <br>
+              </div>
+              <div class="codeout" style="padding: 10px;">
+                  <div class="img">
+                  <img src="img/snowman.png" alt="Snow_Man" style="padding-right: 20px; border-radius: 50%;"/>
+                  <img src="img/snowman.png" alt="Snow_Man" style="border-radius: 20%;"/>
+                  </div>
+              </div>
+            </div>
+            <div class="subtitle">THUMBNAIL IMAGE</div><br>
+                You can also make a thumbnail image using CSS properties. <br><br>
+                
+                <div>
+                <div class="code">
+                  | img{<br>
+                  | &nbsp; border: solid 5px #ff4949;<br>
+                  | &nbsp; border-radius: 5px;<br>
+                  | &nbsp; width: 200px;<br>
+                  | } <br>
+              </div>
+              <div class="codeout" style="padding: 10px;">
+                  <div class="img">
+                  <img src="img/snowman.png" alt="Snow_Man" style="border: solid 5px #ff4949; border-radius: 5px; width: 200px;"/>
+                  </div>
+              </div>
+            </div>
+            <div>
+                <h2>DISPLAYING VIDEOS ON WEB PAGES: </h2><br>
+                To display a video on the web page, you can simply use a <b>&#60;video></b> tag.<br><br>
+                <div class="code">
+                  | &nbsp; &#60;video src="path_of_video">&#60;/video>
+                </div>
+                You can use following code to display a video.<br><br>
+                <div class="code">
+                  | &nbsp; &#60;video src="city.mov" controls="controls" width="600" height="400
+                  ">&#60;/video>
+                </div>
+                <br>
+                <div class="codeout" style="text-align: center;">
+                  <video controls="controls" width="600" height="400" name="CITY" src="img/city.mov"></video>
+                </div>
+            </div>
+                </div>
+
+          <a href="hc00700.html" class="previous" > &laquo Previous</a>
+          <a href="hc00900.html" class="next" style="float: right;">Next &raquo</a>
+            <br><br>
+          </div>
+          <iframe src="https://trinket.io/embed/html/fed99c92c0" ></iframe>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>

@@ -178,7 +178,10 @@ th, td{
 
 /*Terminal*/
 iframe{
+  position: fixed;
   height: 300px;
+  cursor: row-resize;
+  bottom: 0;
   width: 100%;
 }
 .btn{
@@ -193,9 +196,6 @@ iframe{
   padding: 10px;
    background-color: #232323;
   color:#ec3750;
-
-}
-
 
 /* width */
 ::-webkit-scrollbar {
